@@ -128,8 +128,9 @@ const Testimonials = () => {
                 <div className="text-3xl font-bold text-yellow-400">4.9/5</div>
                 <div className="text-blue-100 text-sm">Customer Rating</div>
               </div>
-              <div className="text-3xl font-bold text-yellow-400">98%</div>
-              <div className="text-blue-100 text-sm">Recommend Us</div>
+              <div>
+                <div className="text-3xl font-bold text-yellow-400">98%</div>
+                <div className="text-blue-100 text-sm">Recommend Us</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-yellow-400">₹50Cr+</div>
