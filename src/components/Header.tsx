@@ -2,11 +2,17 @@
 import React, { useState } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const scrollToSection = (sectionId: string) => {
+    if (location.pathname !== '/') {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -19,55 +25,54 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
+          <Link to="/" className="flex items-center">
             <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-3 py-2 rounded-lg font-bold text-lg">
               Harishyam Infra
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection('home')}
+            <Link 
+              to="/"
               className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
             >
               Home
-            </button>
-            <button 
-              onClick={() => scrollToSection('about')}
+            </Link>
+            <Link 
+              to="/about"
               className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
             >
-              About
-            </button>
-            <button 
-              onClick={() => scrollToSection('project')}
+              About Us
+            </Link>
+            <Link 
+              to="/project"
               className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
             >
               Our Project
-            </button>
-            <button 
-              onClick={() => scrollToSection('jewar-plots')}
+            </Link>
+            <Link 
+              to="/premium-plots"
               className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
             >
-              Jewar Airport Plots
-            </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
+              Premium Plots
+            </Link>
+            <Link 
+              to="/contact"
               className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
             >
-              Contact
-            </button>
+              Contact Us
+            </Link>
           </nav>
 
           {/* CTA Button */}
           <div className="hidden md:flex">
-            <Button 
-              onClick={() => scrollToSection('contact')}
-              className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-semibold px-6 py-2 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
-            >
-              <Phone className="w-4 h-4 mr-2" />
-              Enquire Now
-            </Button>
+            <Link to="/contact">
+              <Button className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-semibold px-6 py-2 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl">
+                <Phone className="w-4 h-4 mr-2" />
+                Enquire Now
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -83,43 +88,47 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t bg-white">
             <nav className="flex flex-col space-y-4">
-              <button 
-                onClick={() => scrollToSection('home')}
+              <Link 
+                to="/"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-gray-700 hover:text-blue-600 text-left font-medium"
               >
                 Home
-              </button>
-              <button 
-                onClick={() => scrollToSection('about')}
+              </Link>
+              <Link 
+                to="/about"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-gray-700 hover:text-blue-600 text-left font-medium"
               >
-                About
-              </button>
-              <button 
-                onClick={() => scrollToSection('project')}
+                About Us
+              </Link>
+              <Link 
+                to="/project"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-gray-700 hover:text-blue-600 text-left font-medium"
               >
                 Our Project
-              </button>
-              <button 
-                onClick={() => scrollToSection('jewar-plots')}
+              </Link>
+              <Link 
+                to="/premium-plots"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-gray-700 hover:text-blue-600 text-left font-medium"
               >
-                Jewar Airport Plots
-              </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
+                Premium Plots
+              </Link>
+              <Link 
+                to="/contact"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-gray-700 hover:text-blue-600 text-left font-medium"
               >
-                Contact
-              </button>
-              <Button 
-                onClick={() => scrollToSection('contact')}
-                className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white w-full mt-4"
-              >
-                <Phone className="w-4 h-4 mr-2" />
-                Enquire Now
-              </Button>
+                Contact Us
+              </Link>
+              <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+                <Button className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white w-full mt-4">
+                  <Phone className="w-4 h-4 mr-2" />
+                  Enquire Now
+                </Button>
+              </Link>
             </nav>
           </div>
         )}
