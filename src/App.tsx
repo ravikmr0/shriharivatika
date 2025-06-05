@@ -9,6 +9,10 @@ import About from "./pages/About";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 import PremiumPlots from "./pages/PremiumPlots";
+import JewarAirport from "./pages/JewarAirport";
+import RERAApproved from "./pages/RERAApproved";
+import EMIOptions from "./pages/EMIOptions";
+import GatedCommunity from "./pages/GatedCommunity";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +29,10 @@ const App = () => (
           <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/premium-plots" element={<PremiumPlots />} />
+          <Route path="/jewar-airport" element={<JewarAirport />} />
+          <Route path="/rera-approved" element={<RERAApproved />} />
+          <Route path="/emi-options" element={<EMIOptions />} />
+          <Route path="/gated-community" element={<GatedCommunity />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -1,24 +1,13 @@
 
 import React, { useState } from 'react';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X, Phone, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const location = useLocation();
-
-  const scrollToSection = (sectionId: string) => {
-    if (location.pathname !== '/') {
-      window.location.href = `/#${sectionId}`;
-      return;
-    }
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsMenuOpen(false);
-  };
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b z-50">
@@ -32,7 +21,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6">
             <Link 
               to="/"
               className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
@@ -57,6 +46,43 @@ const Header = () => {
             >
               Premium Plots
             </Link>
+            
+            {/* Features Dropdown */}
+            <div className="relative" onMouseEnter={() => setIsDropdownOpen(true)} onMouseLeave={() => setIsDropdownOpen(false)}>
+              <button className="flex items-center text-gray-700 hover:text-blue-600 transition-colors font-medium">
+                Features
+                <ChevronDown className="w-4 h-4 ml-1" />
+              </button>
+              {isDropdownOpen && (
+                <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2">
+                  <Link 
+                    to="/jewar-airport"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                  >
+                    Near Jewar Airport
+                  </Link>
+                  <Link 
+                    to="/rera-approved"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                  >
+                    RERA Approved
+                  </Link>
+                  <Link 
+                    to="/emi-options"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                  >
+                    Easy EMI Options
+                  </Link>
+                  <Link 
+                    to="/gated-community"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                  >
+                    Gated Community
+                  </Link>
+                </div>
+              )}
+            </div>
+
             <Link 
               to="/contact"
               className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
@@ -115,6 +141,34 @@ const Header = () => {
                 className="text-gray-700 hover:text-blue-600 text-left font-medium"
               >
                 Premium Plots
+              </Link>
+              <Link 
+                to="/jewar-airport"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-gray-700 hover:text-blue-600 text-left font-medium pl-4"
+              >
+                Near Jewar Airport
+              </Link>
+              <Link 
+                to="/rera-approved"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-gray-700 hover:text-blue-600 text-left font-medium pl-4"
+              >
+                RERA Approved
+              </Link>
+              <Link 
+                to="/emi-options"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-gray-700 hover:text-blue-600 text-left font-medium pl-4"
+              >
+                Easy EMI Options
+              </Link>
+              <Link 
+                to="/gated-community"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-gray-700 hover:text-blue-600 text-left font-medium pl-4"
+              >
+                Gated Community
               </Link>
               <Link 
                 to="/contact"

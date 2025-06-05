@@ -74,7 +74,6 @@ const Testimonials = () => {
                 <Quote className="w-8 h-8 text-blue-200" />
               </div>
               
-              {/* Client Image */}
               <div className="flex items-center mb-6">
                 <img 
                   src={testimonial.image}
