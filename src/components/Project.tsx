@@ -38,7 +38,7 @@ const Project = () => {
             <div className="space-y-4 mb-8">
               <div className="flex items-center">
                 <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-                <span className="text-gray-700">RERA Approved Project</span>
+                <span className="text-gray-700"> Approved Project</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />

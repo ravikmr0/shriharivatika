@@ -50,14 +50,14 @@ const Hero = () => {
           <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
             <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
               <Shield className="w-5 h-5 text-green-400 mr-2" />
-              <span className="text-sm font-medium">RERA Approved</span>
+              <span className="text-sm font-medium"> Approved</span>
             </div>
             <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
               <MapPin className="w-5 h-5 text-blue-400 mr-2" />
-              <span className="text-sm font-medium">5 KM from Jewar Airport</span>
+              <span className="text-sm font-medium">10 KM from Jewar Airport</span>
             </div>
             <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
-              <Star className="w-5 h-5 text-yellow-400 mr-2" />
+              <Star className="w-5 h-5 text-yellJow-400 mr-2" />
               <span className="text-sm font-medium">Government Approved</span>
             </div>
           </div>

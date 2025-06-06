@@ -13,7 +13,7 @@ const RERAApproved = () => {
       <section className="pt-24 pb-16 bg-gradient-to-br from-green-900 to-green-700">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center text-white max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">RERA Approved</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Approved Project</h1>
             <p className="text-xl text-green-100">Government Approved with Complete Legal Transparency</p>
           </div>
         </div>
@@ -22,8 +22,8 @@ const RERAApproved = () => {
       <section className="py-20">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why RERA Approval Matters?</h2>
-            <p className="text-lg text-gray-600">RERA ensures your investment is safe and legally compliant</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Government Approval Matters?</h2>
+            <p className="text-lg text-gray-600">Government ensures your investment is safe and legally compliant</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -5,12 +5,12 @@ import { Star, Quote } from 'lucide-react';
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Rajesh Kumar",
+      name: "Sandeep Verma",
       location: "Noida",
       rating: 5,
       text: "Investing in Shri Hari Vatika was the best decision. The location near Jewar Airport is perfect, and the team at Harishyam Infra provided excellent support throughout the process. The returns have been incredible!",
       investment: "₹18 Lakhs",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+      image: "../public/images/sandeep-verma.jpg"
     },
     {
       name: "Priya Sharma",
