@@ -4,28 +4,28 @@ import React from 'react';
 const Gallery = () => {
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-      title: "Aerial View of Development Area"
+      url: "https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Jewar International Airport"
     },
     {
-      url: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      title: "Modern Infrastructure"
+      url: "https://content3.jdmagicbox.com/v2/comp/delhi/r4/011pxx11.xx11.120605145321.j8r4/catalogue/noida-international-university-yamuna-expressway-noida-computer-training-institutes-bbvtaqq7ul.jpg",
+      title: "International University Near Jewar Airport"
     },
     {
-      url: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-      title: "Premium Location"
+      url: "https://sportsdigest.in/wp-content/uploads/2023/06/F1-at-Buddh-International-Circuit.jpeg",
+      title: "Buddh International Circuit"
     },
     {
-      url: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80",
-      title: "Scenic Surroundings"
+      url: "https://images.indianexpress.com/2020/09/Film-city-1.jpg",
+      title: "Film City Near Jewar Airport"
     },
     {
-      url: "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2052&q=80",
-      title: "Natural Beauty"
+      url: "https://images.unsplash.com/photo-1461175827210-5ceac3e39dd2?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Shri Hari Vatika Plots"
     },
     {
-      url: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      title: "Development Progress"
+      url: "https://images.unsplash.com/photo-1705955463252-e3f670e4041b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "2030 Development Progress for Shri Hari Vatika"
     }
   ];
 
