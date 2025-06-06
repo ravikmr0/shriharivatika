@@ -112,7 +112,7 @@ const Contact = () => {
                   <Phone className="w-6 h-6 text-blue-600 mr-4" />
                   <div>
                     <div className="font-semibold text-gray-900">Phone</div>
-                    <div className="text-gray-600">+91 98765 43210</div>
+                    <div className="text-gray-600">+91 7678538328</div>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -126,7 +126,7 @@ const Contact = () => {
                   <MapPin className="w-6 h-6 text-blue-600 mr-4" />
                   <div>
                     <div className="font-semibold text-gray-900">Office Address</div>
-                    <div className="text-gray-600">Sector 18, Noida, Uttar Pradesh 201301</div>
+                    <div className="text-gray-600">Bhutani Alphathum Blossom County, Sector 90, Noida, Uttar Pradesh 201305</div>
                   </div>
                 </div>
                 <div className="flex items-center">
