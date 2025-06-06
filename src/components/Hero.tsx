@@ -71,7 +71,7 @@ const Hero = () => {
               </Button>
             </Link>
             <Link to="/contact">
-              <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-blue-900 font-semibold px-8 py-4 text-lg rounded-lg backdrop-blur-sm transition-all duration-300 hover:scale-105">
+              <Button variant="outline" className="border-2 border-white text-blue-800 hover:bg-slate-100 hover:text-blue-900 font-semibold px-8 py-4 text-lg rounded-lg backdrop-blur-sm transition-all duration-300 hover:scale-105">
                 Book Site Visit
               </Button>
             </Link>
