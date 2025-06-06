@@ -131,8 +131,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                  <p className="text-gray-600">+91 9876543210</p>
-                  <p className="text-gray-600">+91 9876543211</p>
+                  <p className="text-gray-600">+91 7678538328</p>
+                  <p className="text-gray-600">+91 7042077126</p>
                 </div>
               </div>
 
@@ -154,8 +154,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Office Address</h4>
                   <p className="text-gray-600">
-                    123 Business Park, Sector 62,<br />
-                    Noida, Uttar Pradesh 201301
+                     Bhutani Alphathum Blossom County, Sector 90, Noida, Uttar Pradesh 201305
                   </p>
                 </div>
               </div>

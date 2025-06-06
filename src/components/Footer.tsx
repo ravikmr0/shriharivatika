@@ -30,7 +30,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2" />
-                <span>+91 9876543210</span>
+                <span>+91 7678538328</span>
               </div>
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
@@ -109,7 +109,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 Harishyam Infra. All rights reserved.
+              © 2025 Harishyam Infra Pvt. Ltd. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm text-gray-400">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

@@ -4,12 +4,12 @@ import { Phone, MessageCircle } from 'lucide-react';
 
 const FloatingButtons = () => {
   const handleCall = () => {
-    window.open('tel:+919876543210', '_self');
+    window.open('tel:+917678538328', '_self');
   };
 
   const handleWhatsApp = () => {
     const message = "Hi! I'm interested in Shri Hari Vatika plots near Jewar Airport. Please share more details.";
-    const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/917678538328?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 

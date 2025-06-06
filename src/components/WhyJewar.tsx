@@ -70,7 +70,7 @@ const WhyJewar = () => {
                   ✓
                 </div>
                 <div>
-                  <div className="font-semibold">2023-2024</div>
+                  <div className="font-semibold">2024-2025</div>
                   <div className="text-blue-100 text-sm">Airport construction in full swing</div>
                 </div>
               </div>
