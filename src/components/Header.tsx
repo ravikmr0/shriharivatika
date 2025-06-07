@@ -10,14 +10,14 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b z-50">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className="container mx-auto px-8 lg:px-8">
+        <div className="flex items-center justify-between h-16 py-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center space-x-4">
             <img
-              src="/images/logo.png"
-              alt="Harishyam Infra"
-              className="h-10 w-auto object-contain"
+            src="/images/logo.png"
+            alt="Harishyam Infra"
+            className="h-12 w-auto object-contain rounded-xl border-2 border-gray-200 shadow-md"
             />
           </Link>
 

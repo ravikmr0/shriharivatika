@@ -45,7 +45,7 @@ const Hero = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Background slider with overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700">
+      <div className="absolute inset-0 bg-gradient-to-br from-emerald-600 via-emerald-800 to-emerald-900 overflow-hidden">
         {/* Darker overlay for better text readability */}
         <div className="absolute inset-0 bg-black/50 z-10"></div>
 
@@ -167,7 +167,7 @@ const Hero = () => {
             </div>
             <div className="text-center">
               <div className="text-2xl md:text-3xl font-bold text-yellow-400">
-                5 KM
+                10 KM
               </div>
               <div className="text-sm text-blue-200">From Airport</div>
             </div>
