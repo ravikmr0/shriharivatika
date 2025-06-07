@@ -13,10 +13,12 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-3 py-2 rounded-lg font-bold text-lg">
-              Harishyam Infra
-            </div>
+          <Link to="/" className="flex items-center space-x-3">
+            <img
+              src="/images/logo.png"
+              alt="Harishyam Infra"
+              className="h-10 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
