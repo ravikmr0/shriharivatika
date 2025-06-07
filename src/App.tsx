@@ -35,7 +35,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/premium-plots" element={<PremiumPlots />} />
           <Route path="/jewar-airport" element={<JewarAirport />} />
-          <Route path="/rera-approved" element={<RERAApproved />} />
+          <Route path="/government-approved" element={<RERAApproved />} />
           <Route path="/emi-options" element={<EMIOptions />} />
           <Route path="/gated-community" element={<GatedCommunity />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

@@ -1,12 +1,11 @@
-
-import React from 'react';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import React from "react";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -20,8 +19,8 @@ const Footer = () => {
               Harishyam Infra
             </div>
             <p className="text-gray-300 mb-4 leading-relaxed">
-              Building dreams and creating futures with premium real estate developments. 
-              Your trusted partner for smart property investments.
+              Building dreams and creating futures with premium real estate
+              developments. Your trusted partner for smart property investments.
             </p>
             <div className="space-y-2 text-sm text-gray-400">
               <div className="flex items-center">
@@ -44,32 +43,32 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <button 
-                  onClick={() => scrollToSection('home')}
+                <button
+                  onClick={() => scrollToSection("home")}
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Home
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('about')}
+                <button
+                  onClick={() => scrollToSection("about")}
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   About Us
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('project')}
+                <button
+                  onClick={() => scrollToSection("project")}
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Our Project
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('contact')}
+                <button
+                  onClick={() => scrollToSection("contact")}
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Contact Us
@@ -84,7 +83,7 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-300">
               <li>Premium Plots</li>
               <li>Near Jewar Airport</li>
-              <li>RERA Approved</li>
+              <li>Government Approved</li>
               <li>Easy EMI Options</li>
               <li>Gated Community</li>
             </ul>
@@ -95,7 +94,9 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Investment Info</h3>
             <div className="space-y-3">
               <div className="bg-gray-800 p-3 rounded-lg">
-                <div className="text-yellow-400 font-semibold">Starting Price</div>
+                <div className="text-yellow-400 font-semibold">
+                  Starting Price
+                </div>
                 <div className="text-lg font-bold">₹15 Lakhs+</div>
               </div>
               <div className="bg-gray-800 p-3 rounded-lg">
@@ -112,9 +113,15 @@ const Footer = () => {
               © 2025 Harishyam Infra Pvt. Ltd. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms & Conditions</a>
-              <a href="#" className="hover:text-white transition-colors">RERA Details</a>
+              <a href="#" className="hover:text-white transition-colors">
+                Privacy Policy
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                Terms & Conditions
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                Legal Details
+              </a>
             </div>
           </div>
         </div>
