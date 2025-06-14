@@ -42,7 +42,7 @@ const RERAApproved = () => {
               </p>
             </div>
             <div className="text-center p-6">
-              <FileText className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <FileText className="w-12 h-12 text-emerald-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">
                 Transparent Documentation
               </h3>

@@ -55,11 +55,11 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section className="py-20 bg-gradient-to-br from-gray-50 to-emerald-50">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            What Our <span className="text-blue-600">Happy Investors</span> Say
+            What Our <span className="text-emerald-600">Happy Investors</span> Say
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Join hundreds of satisfied investors who have made smart investment decisions 
@@ -71,14 +71,14 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-white p-8 rounded-2xl relative hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="absolute top-4 right-4">
-                <Quote className="w-8 h-8 text-blue-200" />
+                <Quote className="w-8 h-8 text-emerald-200" />
               </div>
               
               <div className="flex items-center mb-6">
                 <img 
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-16 h-16 rounded-full object-cover border-4 border-blue-100 mr-4"
+                  className="w-16 h-16 rounded-full object-cover border-4 border-emerald-100 mr-4"
                 />
                 <div>
                   <h4 className="font-semibold text-gray-900 text-lg">{testimonial.name}</h4>
@@ -98,7 +98,7 @@ const Testimonials = () => {
               <div className="border-t pt-4">
                 <div className="flex justify-between items-center">
                   <div className="text-left">
-                    <div className="text-blue-600 font-semibold text-sm">Investment Amount</div>
+                    <div className="text-emerald-600 font-semibold text-sm">Investment Amount</div>
                     <div className="text-gray-900 font-bold text-lg">{testimonial.investment}</div>
                   </div>
                   <div className="text-right">
@@ -112,28 +112,28 @@ const Testimonials = () => {
         </div>
 
         <div className="text-center">
-          <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-8 rounded-2xl max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white p-8 rounded-2xl max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">Join Our Growing Community</h3>
-            <p className="text-blue-100 mb-6">
+            <p className="text-emerald-100 mb-6">
               Over 500+ families have already invested in Shri Hari Vatika. 
               Don't miss out on this opportunity to secure your financial future.
             </p>
             <div className="grid md:grid-cols-4 gap-6 text-center">
               <div>
                 <div className="text-3xl font-bold text-yellow-400">500+</div>
-                <div className="text-blue-100 text-sm">Happy Families</div>
+                <div className="text-emerald-100 text-sm">Happy Families</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-yellow-400">4.9/5</div>
-                <div className="text-blue-100 text-sm">Customer Rating</div>
+                <div className="text-emerald-100 text-sm">Customer Rating</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-yellow-400">98%</div>
-                <div className="text-blue-100 text-sm">Recommend Us</div>
+                <div className="text-emerald-100 text-sm">Recommend Us</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-yellow-400">₹50Cr+</div>
-                <div className="text-blue-100 text-sm">Total Investment</div>
+                <div className="text-emerald-100 text-sm">Total Investment</div>
               </div>
             </div>
           </div>

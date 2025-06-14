@@ -11,11 +11,11 @@ const JewarAirport = () => {
     <div className="min-h-screen bg-white">
       <Header />
       
-      <section className="pt-24 pb-16 bg-gradient-to-br from-blue-900 to-blue-700">
+      <section className="pt-24 pb-16 bg-gradient-to-br from-emerald-900 to-emerald-700">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center text-white max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Near Jewar Airport</h1>
-            <p className="text-xl text-blue-100">Strategic Location with Unlimited Growth Potential</p>
+            <p className="text-xl text-emerald-100">Strategic Location with Unlimited Growth Potential</p>
           </div>
         </div>
       </section>
@@ -31,15 +31,15 @@ const JewarAirport = () => {
               </p>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <Plane className="w-5 h-5 text-blue-600 mr-3" />
+                  <Plane className="w-5 h-5 text-emerald-600 mr-3" />
                   <span>India's largest airport project</span>
                 </div>
                 <div className="flex items-center">
-                  <MapPin className="w-5 h-5 text-blue-600 mr-3" />
+                  <MapPin className="w-5 h-5 text-emerald-600 mr-3" />
                   <span>Just 5 KM from our project</span>
                 </div>
                 <div className="flex items-center">
-                  <TrendingUp className="w-5 h-5 text-blue-600 mr-3" />
+                  <TrendingUp className="w-5 h-5 text-emerald-600 mr-3" />
                   <span>300-500% expected appreciation</span>
                 </div>
               </div>

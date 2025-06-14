@@ -34,7 +34,7 @@ const EMIOptions = () => {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Calculator className="w-6 h-6 text-blue-600 mr-4 mt-1" />
+                  <Calculator className="w-6 h-6 text-emerald-600 mr-4 mt-1" />
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Extended EMI Terms</h3>
                     <p className="text-gray-600">Up to 60 months EMI options available</p>
@@ -54,7 +54,7 @@ const EMIOptions = () => {
               <div className="space-y-4">
                 <div className="bg-white p-4 rounded-lg">
                   <div className="text-sm text-gray-600">Plot Price</div>
-                  <div className="text-2xl font-bold text-blue-600">₹25,00,000</div>
+                  <div className="text-2xl font-bold text-emerald-600">₹25,00,000</div>
                 </div>
                 <div className="bg-white p-4 rounded-lg">
                   <div className="text-sm text-gray-600">Down Payment (20%)</div>

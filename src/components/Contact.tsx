@@ -36,7 +36,7 @@ const Contact = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Get In <span className="text-blue-600">Touch</span>
+            Get In <span className="text-emerald-600">Touch</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Ready to invest in your future? Contact us today to learn more about 
@@ -113,7 +113,7 @@ const Contact = () => {
 
               <Button 
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-3"
+                className="w-full bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white font-semibold py-3"
               >
                 Send Message
               </Button>
@@ -127,7 +127,7 @@ const Contact = () => {
             <div className="space-y-6 mb-8">
               <div className="flex items-start">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                  <Phone className="w-6 h-6 text-blue-600" />
+                  <Phone className="w-6 h-6 text-emerald-600" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>

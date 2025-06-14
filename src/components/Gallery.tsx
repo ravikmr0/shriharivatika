@@ -34,7 +34,7 @@ const Gallery = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Project <span className="text-blue-600">Gallery</span>
+            Project <span className="text-emerald-600">Gallery</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Explore the beauty and potential of Shri Hari Vatika through our collection 
@@ -68,7 +68,7 @@ const Gallery = () => {
             <p className="text-gray-600 mb-6">
               Schedule a site visit to experience the location firsthand and see the development progress.
             </p>
-            <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold px-8 py-3 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300">
+            <button className="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white font-semibold px-8 py-3 rounded-lg hover:from-emerald-700 hover:to-emerald-800 transition-all duration-300">
               Schedule Site Visit
             </button>
           </div>

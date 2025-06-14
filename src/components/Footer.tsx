@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-3 py-2 rounded-lg font-bold text-lg mb-4 inline-block">
+            <div className="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white px-3 py-2 rounded-lg font-bold text-lg mb-4 inline-block">
               Harishyam Infra
             </div>
             <p className="text-gray-300 mb-4 leading-relaxed">

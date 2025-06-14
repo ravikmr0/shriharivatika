@@ -34,11 +34,11 @@ const Contact = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-blue-900 to-blue-700">
+      <section className="pt-24 pb-16 bg-gradient-to-br from-emerald-900 to-emerald-700">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center text-white max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
-            <p className="text-xl text-blue-100">Get in touch with our real estate experts</p>
+            <p className="text-xl text-emerald-100">Get in touch with our real estate experts</p>
           </div>
         </div>
       </section>
@@ -59,7 +59,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                     placeholder="Enter your full name"
                   />
                 </div>
@@ -71,7 +71,7 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                     placeholder="Enter your phone number"
                   />
                 </div>
@@ -83,7 +83,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                     placeholder="Enter your email address"
                   />
                 </div>
@@ -94,11 +94,11 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                     placeholder="Tell us about your requirements..."
                   ></textarea>
                 </div>
-                <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg">
+                <Button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3 text-lg">
                   Send Message
                 </Button>
               </form>
@@ -109,28 +109,28 @@ const Contact = () => {
               <h2 className="text-3xl font-bold text-gray-900 mb-8">Get in Touch</h2>
               <div className="space-y-6">
                 <div className="flex items-center">
-                  <Phone className="w-6 h-6 text-blue-600 mr-4" />
+                  <Phone className="w-6 h-6 text-emerald-600 mr-4" />
                   <div>
                     <div className="font-semibold text-gray-900">Phone</div>
                     <div className="text-gray-600">+91 7678538328</div>
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <Mail className="w-6 h-6 text-blue-600 mr-4" />
+                  <Mail className="w-6 h-6 text-emerald-600 mr-4" />
                   <div>
                     <div className="font-semibold text-gray-900">Email</div>
                     <div className="text-gray-600">info@harishyaminfra.com</div>
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <MapPin className="w-6 h-6 text-blue-600 mr-4" />
+                  <MapPin className="w-6 h-6 text-emerald-600 mr-4" />
                   <div>
                     <div className="font-semibold text-gray-900">Office Address</div>
-                    <div className="text-gray-600">Bhutani Alphathum Blossom County, Sector 90, Noida, Uttar Pradesh 201305</div>
+                    <div className="text-gray-600">Office No:410, Bhutani Alphathum, Sector 90, Noida, Uttar Pradesh 201305</div>
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <Clock className="w-6 h-6 text-blue-600 mr-4" />
+                  <Clock className="w-6 h-6 text-emerald-600 mr-4" />
                   <div>
                     <div className="font-semibold text-gray-900">Working Hours</div>
                     <div className="text-gray-600">Mon - Sat: 9:00 AM - 7:00 PM</div>

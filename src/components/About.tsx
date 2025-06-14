@@ -7,7 +7,7 @@ const About = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            About <span className="text-blue-600">Harishyam Infra</span>
+            About <span className="text-emerald-600">Harishyam Infra</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             With years of expertise in real estate development, we are committed
@@ -38,7 +38,7 @@ const About = () => {
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <Award className="w-6 h-6 text-blue-600" />
+                  <Award className="w-6 h-6 text-emerald-600" />
                 </div>
                 <h4 className="font-semibold text-gray-900 mb-2">
                   Quality Assurance
@@ -67,7 +67,7 @@ const About = () => {
             <div className="space-y-6">
               <div className="flex items-start">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                  <Users className="w-6 h-6 text-blue-600" />
+                  <Users className="w-6 h-6 text-emerald-600" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">
@@ -110,10 +110,10 @@ const About = () => {
 
             <div className="mt-8 p-4 bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg">
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">
+                <div className="text-2xl font-bold text-emerald-600">
                   10+ Years
                 </div>
-                <div className="text-sm text-blue-800">
+                <div className="text-sm text-emerald-800">
                   Experience in Real Estate
                 </div>
               </div>

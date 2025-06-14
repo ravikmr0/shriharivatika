@@ -22,7 +22,7 @@ const PremiumPlots = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-blue-900 to-blue-700 relative overflow-hidden">
+      <section className="pt-24 pb-16 bg-gradient-to-br from-emerald-900 to-emerald-700 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center opacity-20"></div>
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="text-center text-white max-w-4xl mx-auto">
@@ -55,10 +55,10 @@ const PremiumPlots = () => {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-              <Plane className="w-12 h-12 text-blue-600 mb-4" />
+              <Plane className="w-12 h-12 text-emerald-600 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Airport Proximity</h3>
               <p className="text-gray-600">
-                Located just 5 KM from Jewar Airport, ensuring excellent
+                Located just 10 KM from Jewar Airport, ensuring excellent
                 connectivity and future appreciation
               </p>
             </div>
@@ -71,7 +71,7 @@ const PremiumPlots = () => {
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-              <Shield className="w-12 h-12 text-blue-600 mb-4" />
+              <Shield className="w-12 h-12 text-emerald-600 mb-4" />
               <h3 className="text-xl font-semibold mb-3">
                 Government Approved
               </h3>
@@ -106,22 +106,22 @@ const PremiumPlots = () => {
                 <h3 className="text-2xl font-bold text-gray-900">
                   Standard Plot
                 </h3>
-                <div className="text-3xl font-bold text-blue-600 mt-2">
+                <div className="text-3xl font-bold text-emerald-600 mt-2">
                   ₹15-20 Lakhs
                 </div>
                 <div className="text-gray-600">1000-1200 sq ft</div>
               </div>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-center text-gray-700">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
                   Corner & Regular plots available
                 </li>
                 <li className="flex items-center text-gray-700">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
                   30 feet road frontage
                 </li>
                 <li className="flex items-center text-gray-700">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
                   All amenities included
                 </li>
               </ul>
@@ -130,7 +130,7 @@ const PremiumPlots = () => {
               </Button>
             </div>
 
-            <div className="bg-blue-600 text-white p-8 rounded-2xl shadow-lg transform scale-105">
+            <div className="bg-emerald-600 text-white p-8 rounded-2xl shadow-lg transform scale-105">
               <div className="text-center mb-6">
                 <img
                   src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
@@ -139,7 +139,7 @@ const PremiumPlots = () => {
                 />
                 <h3 className="text-2xl font-bold">Premium Plot</h3>
                 <div className="text-3xl font-bold mt-2">₹25-35 Lakhs</div>
-                <div className="text-blue-100">1500-1800 sq ft</div>
+                <div className="text-emerald-100">1500-1800 sq ft</div>
               </div>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-center">
@@ -158,7 +158,7 @@ const PremiumPlots = () => {
               <Button
                 onClick={scrollToContact}
                 variant="outline"
-                className="w-full border-white text-blue-600 bg-white hover:bg-gray-100"
+                className="w-full border-white text-emerald-600 bg-white hover:bg-gray-100"
               >
                 Enquire Now
               </Button>
@@ -174,22 +174,22 @@ const PremiumPlots = () => {
                 <h3 className="text-2xl font-bold text-gray-900">
                   Luxury Plot
                 </h3>
-                <div className="text-3xl font-bold text-blue-600 mt-2">
+                <div className="text-3xl font-bold text-emerald-600 mt-2">
                   ₹40-60 Lakhs
                 </div>
                 <div className="text-gray-600">2000-2500 sq ft</div>
               </div>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-center text-gray-700">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
                   Premium corner locations
                 </li>
                 <li className="flex items-center text-gray-700">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
                   60 feet main road facing
                 </li>
                 <li className="flex items-center text-gray-700">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
                   Premium amenities access
                 </li>
               </ul>
@@ -223,7 +223,7 @@ const PremiumPlots = () => {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Building className="w-6 h-6 text-blue-600 mr-4 mt-1" />
+                  <Building className="w-6 h-6 text-emerald-600 mr-4 mt-1" />
                   <div>
                     <h3 className="text-xl font-semibold mb-2">
                       Infrastructure Development

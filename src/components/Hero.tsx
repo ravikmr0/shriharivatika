@@ -110,12 +110,12 @@ const Hero = () => {
             </span>
           </h1>
 
-          <h2 className="text-xl md:text-2xl mb-8 text-blue-100 font-medium">
+          <h2 className="text-xl md:text-2xl mb-8 text-emerald-100 font-medium">
             Premium Jewar Airport Plots at Shri Hari Vatika
           </h2>
 
           {/* Description */}
-          <p className="text-lg md:text-xl mb-10 text-blue-100 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl mb-10 text-emerald-100 max-w-3xl mx-auto leading-relaxed">
             Secure your future with strategically located plots near the
             upcoming Jewar Airport. Experience exceptional growth potential in
             India's largest airport development.
@@ -128,7 +128,7 @@ const Hero = () => {
               <span className="text-sm font-medium">Approved</span>
             </div>
             <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
-              <MapPin className="w-5 h-5 text-blue-400 mr-2" />
+              <MapPin className="w-5 h-5 text-emerald-400 mr-2" />
               <span className="text-sm font-medium">
                 10 KM from Jewar Airport
               </span>
@@ -150,7 +150,7 @@ const Hero = () => {
             <Link to="/contact">
               <Button
                 variant="outline"
-                className="border-2 border-white text-blue-800 hover:bg-slate-100 hover:text-blue-900 font-semibold px-8 py-4 text-lg rounded-lg backdrop-blur-sm transition-all duration-300 hover:scale-105"
+                className="border-2 border-white text-emerald-800 hover:bg-slate-100 hover:text-emerald-900 font-semibold px-8 py-4 text-lg rounded-lg backdrop-blur-sm transition-all duration-300 hover:scale-105"
               >
                 Book Site Visit
               </Button>
@@ -163,25 +163,25 @@ const Hero = () => {
               <div className="text-2xl md:text-3xl font-bold text-yellow-400">
                 ₹15L+
               </div>
-              <div className="text-sm text-blue-200">Starting Price</div>
+              <div className="text-sm text-emerald-200">Starting Price</div>
             </div>
             <div className="text-center">
               <div className="text-2xl md:text-3xl font-bold text-yellow-400">
                 10 KM
               </div>
-              <div className="text-sm text-blue-200">From Airport</div>
+              <div className="text-sm text-emerald-200">From Airport</div>
             </div>
             <div className="text-center">
               <div className="text-2xl md:text-3xl font-bold text-yellow-400">
                 300%
               </div>
-              <div className="text-sm text-blue-200">Expected ROI</div>
+              <div className="text-sm text-emerald-200">Expected ROI</div>
             </div>
             <div className="text-center">
               <div className="text-2xl md:text-3xl font-bold text-yellow-400">
                 500+
               </div>
-              <div className="text-sm text-blue-200">Happy Families</div>
+              <div className="text-sm text-emerald-200">Happy Families</div>
             </div>
           </div>
         </div>
@@ -189,7 +189,7 @@ const Hero = () => {
 
       {/* Floating shapes for visual appeal */}
       <div className="absolute top-20 left-10 w-20 h-20 bg-yellow-400/10 rounded-full blur-xl animate-pulse"></div>
-      <div className="absolute bottom-20 right-10 w-32 h-32 bg-blue-400/10 rounded-full blur-xl animate-pulse"></div>
+      <div className="absolute bottom-20 right-10 w-32 h-32 bg-emerald-400/10 rounded-full blur-xl animate-pulse"></div>
     </section>
   );
 };

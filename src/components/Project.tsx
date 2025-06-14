@@ -38,7 +38,7 @@ const Project = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Our Project: <span className="text-blue-600">Shri Hari Vatika</span>
+            Our Project: <span className="text-emerald-600">Shri Hari Vatika</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             A premium residential plot development strategically located near
@@ -85,11 +85,11 @@ const Project = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-6 rounded-lg">
-              <h4 className="font-semibold text-blue-900 mb-2">
+            <div className="bg-gradient-to-r from-emerald-50 to-emerald-100 p-6 rounded-lg">
+              <h4 className="font-semibold text-emerald-900 mb-2">
                 Location Advantages
               </h4>
-              <div className="space-y-2 text-sm text-blue-800">
+              <div className="space-y-2 text-sm text-emerald-800">
                 <div className="flex items-center">
                   <MapPin className="w-4 h-4 mr-2" />
                   <span>5 KM from Jewar Airport</span>
@@ -113,7 +113,7 @@ const Project = () => {
 
             <div className="bg-white p-6 rounded-lg shadow-lg mb-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">
+                <div className="text-3xl font-bold text-emerald-600 mb-2">
                   ₹15 Lakhs+
                 </div>
                 <div className="text-gray-600 mb-4">Starting Price</div>
@@ -157,8 +157,8 @@ const Project = () => {
                 key={index}
                 className="bg-white border border-gray-200 p-6 rounded-lg hover:shadow-lg transition-shadow duration-300"
               >
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-blue-600" />
+                <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+                  <feature.icon className="w-6 h-6 text-emerald-600" />
                 </div>
                 <h4 className="font-semibold text-gray-900 mb-2">
                   {feature.title}

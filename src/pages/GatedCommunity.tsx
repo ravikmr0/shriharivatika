@@ -33,7 +33,7 @@ const GatedCommunity = () => {
               <p className="text-gray-600">Round-the-clock security with trained guards</p>
             </div>
             <div className="bg-white border border-gray-200 p-8 rounded-2xl hover:shadow-lg transition-shadow">
-              <Camera className="w-12 h-12 text-blue-600 mb-4" />
+              <Camera className="w-12 h-12 text-emerald-600 mb-4" />
               <h3 className="text-xl font-semibold mb-3">CCTV Surveillance</h3>
               <p className="text-gray-600">Complete CCTV coverage for enhanced security</p>
             </div>
@@ -53,7 +53,7 @@ const GatedCommunity = () => {
               <p className="text-gray-600">Modern community hall for events</p>
             </div>
             <div className="bg-white border border-gray-200 p-8 rounded-2xl hover:shadow-lg transition-shadow">
-              <Clock className="w-12 h-12 text-blue-600 mb-4" />
+              <Clock className="w-12 h-12 text-emerald-600 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Maintenance</h3>
               <p className="text-gray-600">Professional maintenance and upkeep</p>
             </div>
