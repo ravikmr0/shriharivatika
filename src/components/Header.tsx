@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link, useLocation } from "react-router-dom";
+import { Input } from "@/components/ui/input";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,9 +16,9 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-4">
             <img
-            src="/images/logo.png"
-            alt="Harishyam Infra"
-            className="h-12 w-auto object-contain rounded-xl border-2 border-gray-200 shadow-md"
+              src="/images/logo.png"
+              alt="Harishyam Infra"
+              className="h-12 w-auto object-contain rounded-xl border-2 border-gray-200 shadow-md"
             />
           </Link>
 

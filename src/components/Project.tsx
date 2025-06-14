@@ -146,6 +146,82 @@ const Project = () => {
           </div>
         </div>
 
+        {/* Plot Information */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">
+            Plot Information
+          </h3>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Residential Plot */}
+            <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl border border-green-200">
+              <h4 className="text-xl font-bold text-green-800 mb-6 text-center">
+                Residential Plot
+              </h4>
+              <div className="space-y-4">
+                <div className="bg-white p-4 rounded-lg">
+                  <h5 className="font-semibold text-gray-900 mb-2">
+                    Plot Sizes
+                  </h5>
+                  <p className="text-gray-700">50 / 100 / 200 Sq. Yard</p>
+                </div>
+                <div className="bg-white p-4 rounded-lg">
+                  <h5 className="font-semibold text-gray-900 mb-2">Price</h5>
+                  <p className="text-2xl font-bold text-green-600">
+                    ₹16,000 /- Sq. Yard
+                  </p>
+                </div>
+                <div className="bg-white p-4 rounded-lg">
+                  <h5 className="font-semibold text-gray-900 mb-2">
+                    Plot Facing
+                  </h5>
+                  <p className="text-gray-700">East, West, North, South</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Commercial Plot */}
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border border-blue-200">
+              <h4 className="text-xl font-bold text-blue-800 mb-6 text-center">
+                Commercial / Corner Plot
+              </h4>
+              <div className="space-y-4">
+                <div className="bg-white p-4 rounded-lg">
+                  <h5 className="font-semibold text-gray-900 mb-2">
+                    Plot Sizes
+                  </h5>
+                  <p className="text-gray-700">50 / 100 / 200 Sq. Yard</p>
+                </div>
+                <div className="bg-white p-4 rounded-lg">
+                  <h5 className="font-semibold text-gray-900 mb-2">Price</h5>
+                  <p className="text-2xl font-bold text-blue-600">
+                    ₹17,000 /- Sq. Yard
+                  </p>
+                </div>
+                <div className="bg-white p-4 rounded-lg">
+                  <h5 className="font-semibold text-gray-900 mb-2">
+                    Plot Facing
+                  </h5>
+                  <p className="text-gray-700">East, West, North, South</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-8">
+            <Button
+              onClick={() =>
+                window.open(
+                  "https://shrishyamdeveloper.com/properties/shree-hari-vatika-2/",
+                  "_blank",
+                )
+              }
+              className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold px-8 py-3"
+            >
+              View More Details
+            </Button>
+          </div>
+        </div>
+
         {/* Features Grid */}
         <div>
           <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">
