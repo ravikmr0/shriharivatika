@@ -10,7 +10,7 @@ const Testimonials = () => {
       rating: 5,
       text: "Investing in Shri Hari Vatika was the best decision. The location near Jewar Airport is perfect, and the team at Harishyam Infra provided excellent support throughout the process. The returns have been incredible!",
       investment: "₹18 Lakhs",
-      image: "https://images.unsplash.com/photo-1572957946666-2e386e1e913d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      image: "./public/images/sandeep-verma.jpg"
     },
     {
       name: "Priya Sharma",
