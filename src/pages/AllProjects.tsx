@@ -16,8 +16,8 @@ const AllProjects = () => {
       id: 1,
       title: "Shri Hari Vatika",
       subtitle: "Premium Plots Near Jewar Airport",
-      location: "Sector-18 & 20, Yamuna Expressway",
-      image: "https://images.unsplash.com/photo-1461175827210-5ceac3e39dd2?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.1.0",
+      location: "Jewar Airport, Yamuna Expressway",
+      image: "/images/plots/vatika.jpg",
       price: "15 Lac",
       area: "1000-2000 Sq.Ft",
       size: "50-200 Sq.Yard",
@@ -28,10 +28,10 @@ const AllProjects = () => {
     },
     {
       id: 2,
-      title: "Yamuna Authority Plots",
+      title: "Shri Hari Vatika Phase-2",
       subtitle: "Government Approved Plots",
-      location: "Sector-18 & 20, Yamuna Expressway",
-      image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=2000&q=80",
+      location: "Jewar Airport, Yamuna Expressway",
+      image: "/images/plots/vatika_phase.jpg",
       price: "25 Lac",
       area: "on Request",
       size: "on Request",
@@ -42,10 +42,10 @@ const AllProjects = () => {
     },
     {
       id: 3,
-      title: "Da-Foreste",
+      title: "Shri Hari Vatika Farm House",
       subtitle: "Farm House in Jewar",
       location: "Jewar, Greater Noida",
-      image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=2000&q=80",
+      image: "/images/plots/vatika_home.jpg",
       price: "18 Lac",
       area: "on Request",
       size: "on Request",
@@ -54,12 +54,12 @@ const AllProjects = () => {
       featured: false,
       category: "Farm House"
     },
-    {
+   {
       id: 4,
-      title: "ROF Galleria 93",
+      title: "Residential Plots",
       subtitle: "Premium Residential Complex",
-      location: "Sector-93, Gurugram",
-      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      location: "Jewar, Greater Noida",
+      image: "/images/plots/vatika_home.jpg",
       price: "1.38 Cr",
       area: "on Request",
       size: "on Request",
@@ -70,10 +70,10 @@ const AllProjects = () => {
     },
     {
       id: 5,
-      title: "Tare Kailash",
+      title: "Shri Hari Vatika Luxury",
       subtitle: "Luxury Residential Project",
       location: "Noida Extension",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/images/plots/vatika.jpg",
       price: "45 Lac",
       area: "1200-1800 Sq.Ft",
       size: "2-3 BHK",
@@ -84,10 +84,10 @@ const AllProjects = () => {
     },
     {
       id: 6,
-      title: "Sobha City",
+      title: "shri Hari Vatika Township",
       subtitle: "Integrated Township",
-      location: "Sector-108, Gurugram",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      location: "Jewar, Greater Noida",
+      image: "/images/plots/vatika_twon.jpg",
       price: "85 Lac",
       area: "1500-2500 Sq.Ft",
       size: "3-4 BHK",
@@ -95,7 +95,7 @@ const AllProjects = () => {
       status: "Available",
       featured: false,
       category: "Township"
-    }
+    } 
   ];
 
   const categories = ['All', 'Plots', 'Residential', 'Farm House', 'Township'];
