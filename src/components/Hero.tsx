@@ -16,11 +16,11 @@ const Hero = () => {
       title: "Premium Plots",
     },
     {
-      url: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=2000&q=80",
+      url: "https://images.unsplash.com/photo-1587745890135-20db8c79b027?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Residential Areas",
     },
     {
-      url: "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=2000&q=80",
+      url: "https://images.unsplash.com/photo-1705954797147-652784bc2484?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Industrial Development",
     },
   ];
@@ -45,7 +45,7 @@ const Hero = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Background slider with overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-emerald-600 via-emerald-800 to-emerald-900 overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-emerald-600 via-emerald-700 to-emerald-800 overflow-hidden">
         {/* Darker overlay for better text readability */}
         <div className="absolute inset-0 bg-black/50 z-10"></div>
 
@@ -116,9 +116,7 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-lg md:text-xl mb-10 text-emerald-100 max-w-3xl mx-auto leading-relaxed">
-            Secure your future with strategically located plots near the
-            upcoming Jewar Airport. Experience exceptional growth potential in
-            India's largest airport development.
+           
           </p>
 
           {/* Trust Signals */}
@@ -135,7 +133,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
               <Star className="w-5 h-5 text-yellow-400 mr-2" />
-              <span className="text-sm font-medium">Vartika Society </span>
+              <span className="text-sm font-medium">Geted Society </span>
             </div>
           </div>
 

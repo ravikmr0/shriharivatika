@@ -8,50 +8,50 @@ const Testimonials = () => {
       name: "Sandeep Verma",
       location: "Noida",
       rating: 5,
-      text: "Investing in Shri Hari Vatika was the best decision. The location near Jewar Airport is perfect, and the team at Harishyam Infra provided excellent support throughout the process. The returns have been incredible!",
+      text: "Investing in Shri Hari Vatika was the best decision.",
       investment: "₹18 Lakhs",
-      image: "/images/sandeep-verma.jpg"
+      image: "/images/testimonial/sandeep-verma.jpg"
     },
     {
-      name: "Priya Sharma",
+      name: "Rahul Sharma",
       location: "Delhi",
       rating: 5,
-      text: "The transparency and professionalism of Harishyam Infra impressed me. All documents were clear, and the RERA approval gave me confidence in my investment. Highly recommend for anyone looking at Jewar plots!",
+      text: "The transparency and professionalism of Harishyam Infra impressed me.",
       investment: "₹25 Lakhs",
-      image: "https://images.unsplash.com/photo-1611997009838-dc7fd9a41961?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      image: "/images/testimonial/rahul.jpeg"
     },
     {
       name: "Amit Gupta",
       location: "Gurgaon",
       rating: 5,
-      text: "Excellent location with great potential. The proximity to Jewar Airport and upcoming Film City makes this a smart long-term investment. The plot appreciation has exceeded my expectations.",
+      text: "Excellent location with great potential.",
       investment: "₹32 Lakhs",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
-    },
-    {
+      image: "/images/testimonial/amit.jpeg"
+    }
+   /* {
       name: "Sunita Yadav",
       location: "Greater Noida",
       rating: 5,
-      text: "As a working professional, I was looking for a secure investment. Shri Hari Vatika offered exactly what I needed - location, legal clarity, and growth potential. Very satisfied with my purchase.",
+      text: "As a working professional, I was looking for a secure investment.",
       investment: "₹22 Lakhs",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+      image: "/images/sunita.jpg"
     },
     {
       name: "Vikash Singh",
       location: "Faridabad",
       rating: 5,
-      text: "The entire process was smooth and transparent. The team guided me through every step, from documentation to possession. The infrastructure development around Jewar is impressive.",
+      text: "The team at Harishyam Infra made the entire process seamless.",
       investment: "₹28 Lakhs",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+      image: "/images/vikash.jpg"
     },
     {
       name: "Neha Agarwal",
       location: "Ghaziabad",
       rating: 5,
-      text: "Perfect investment for future security. The location advantage near Jewar Airport is unmatched. The EMI options made it very affordable for middle-class families like ours.",
+      text: "Perfect investment for future security.",
       investment: "₹20 Lakhs",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
-    }
+      image: "/images/neha.jpg"
+    } */
   ];
 
   return (
@@ -62,8 +62,7 @@ const Testimonials = () => {
             What Our <span className="text-emerald-600">Happy Investors</span> Say
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Join hundreds of satisfied investors who have made smart investment decisions 
-            with Harishyam Infra at Shri Hari Vatika.
+           
           </p>
         </div>
 

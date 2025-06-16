@@ -7,24 +7,24 @@ const ProjectsGrid = () => {
   const projects = [
     {
       id: 1,
-      title: "Shri Hari Vatika",
-      subtitle: "Premium Plots Near Jewar Airport",
-      location: "Sector-18 & 20, Yamuna Expressway",
-      image: "https://images.unsplash.com/photo-1461175827210-5ceac3e39dd2?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.1.0",
+      title: "Shri Hari Vatika Phase-1",
+      subtitle: " Plots Near Jewar Airport",
+      location: "Yamuna Expressway",
+      image: "/images/plots/vatika.jpg",
       price: "15 Lac",
       area: "1000-2000 Sq.Ft",
       size: "50-200 Sq.Yard",
       type: "Residential Plots",
       status: "Available",
       featured: true,
-      highlights: ["Near Jewar Airport", "RERA Approved", "Gated Community"]
+      highlights: ["Near Jewar Airport", " Approved", "Gated Community"]
     },
     {
       id: 2,
-      title: "Yamuna Authority Plots",
-      subtitle: "Government Approved Plots",
-      location: "Sector-18 & 20, Yamuna Expressway",
-      image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=2000&q=80",
+      title: "Shri Hari Vatika Phase-2",
+      subtitle: "Approved Plots",
+      location: "Yamuna Expressway",
+      image: "/images/plots/var.jpg",
       price: "25 Lac",
       area: "on Request",
       size: "on Request",
@@ -35,10 +35,10 @@ const ProjectsGrid = () => {
     },
     {
       id: 3,
-      title: "Da-Foreste",
+      title: "Shri Hari Vatika Farm House",
       subtitle: "Farm House in Jewar",
       location: "Jewar, Greater Noida",
-      image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=2000&q=80",
+      image: "/images/plots/varti.jpg",
       price: "18 Lac",
       area: "on Request",
       size: "on Request",
@@ -47,7 +47,7 @@ const ProjectsGrid = () => {
       featured: false,
       highlights: ["Farm House", "Natural Environment", "Investment Opportunity"]
     },
-    {
+   /* {
       id: 4,
       title: "ROF Galleria 93",
       subtitle: "Premium Residential Complex",
@@ -88,12 +88,12 @@ const ProjectsGrid = () => {
       status: "Available",
       featured: false,
       highlights: ["Integrated Township", "World-class Amenities", "Premium Location"]
-    }
+    } */
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section className="py-7 bg-gradient-to-br from-gray-60 to-white">
+      <div className="container mx-auto px-4 lg:px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center bg-emerald-100 border border-emerald-200 rounded-full px-4 py-2 mb-6">
@@ -110,7 +110,7 @@ const ProjectsGrid = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
           {projects.map((project, index) => (
             <div 
               key={project.id} 
@@ -120,13 +120,13 @@ const ProjectsGrid = () => {
             >
               {/* Featured Badge */}
               {project.featured && (
-                <div className="absolute top-4 left-4 z-10 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                <div className="absolute top-4 left-4 z-4 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-1 py-1 rounded-full text-sm font-semibold">
                   Featured
                 </div>
               )}
 
               {/* Status Badge */}
-              <div className={`absolute top-4 right-4 z-10 px-3 py-1 rounded-full text-sm font-semibold ${
+              <div className={`absolute top-4 right-2 z-10 px-3 py-1 rounded-full text-sm font-semibold ${
                 project.status === 'Available' 
                   ? 'bg-green-100 text-green-800' 
                   : 'bg-yellow-100 text-yellow-800'
@@ -147,7 +147,7 @@ const ProjectsGrid = () => {
               {/* Project Content */}
               <div className="p-6">
                 {/* Project Title */}
-                <div className="mb-4">
+                <div className="mb-1">
                   <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors">
                     {project.title}
                   </h3>
@@ -156,7 +156,7 @@ const ProjectsGrid = () => {
 
                 {/* Location */}
                 <div className="flex items-center text-gray-600 mb-4">
-                  <MapPin className="w-4 h-4 mr-2 text-emerald-500" />
+                  <MapPin className="w-2 h-2 mr-2 text-emerald-500" />
                   <span className="text-sm">{project.location}</span>
                 </div>
 
@@ -174,11 +174,11 @@ const ProjectsGrid = () => {
 
                 {/* Highlights */}
                 <div className="mb-4">
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-1">
                     {project.highlights.slice(0, 2).map((highlight, idx) => (
                       <span 
                         key={idx}
-                        className="bg-emerald-50 text-emerald-700 px-2 py-1 rounded-md text-xs font-medium"
+                        className="bg-emerald-50 text-emerald-700 px-1 py-1 rounded-md text-xs font-medium"
                       >
                         {highlight}
                       </span>
@@ -187,15 +187,15 @@ const ProjectsGrid = () => {
                 </div>
 
                 {/* Price and CTA */}
-                <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                <div className="flex items-center justify-between pt-1 border-t border-gray-100">
                   <div>
-                    <div className="text-2xl font-bold text-emerald-600">₹ {project.price}</div>
+                    <div className="text-1xl font-bold text-emerald-600">₹ {project.price}</div>
                     <div className="text-xs text-gray-500">{project.type}</div>
                   </div>
                   <Link to={`/project-details/${project.id}`}>
                     <Button className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white px-6 py-2 rounded-lg group-hover:shadow-lg transition-all duration-300">
                       View Details
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight className="w-1 h-1 ml-1 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </Link>
                 </div>
