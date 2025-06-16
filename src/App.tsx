@@ -13,6 +13,8 @@ import JewarAirport from "./pages/JewarAirport";
 import RERAApproved from "./pages/RERAApproved";
 import EMIOptions from "./pages/EMIOptions";
 import GatedCommunity from "./pages/GatedCommunity";
+import ProjectDetails from "./pages/ProjectDetails";
+import AllProjects from "./pages/AllProjects";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,6 +40,8 @@ const App = () => (
           <Route path="/government-approved" element={<RERAApproved />} />
           <Route path="/emi-options" element={<EMIOptions />} />
           <Route path="/gated-community" element={<GatedCommunity />} />
+          <Route path="/project-details/:id" element={<ProjectDetails />} />
+          <Route path="/all-projects" element={<AllProjects />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           {import.meta.env.VITE_TEMPO && <Route path="/tempobook/*" />}
           <Route path="*" element={<NotFound />} />
