@@ -1,5 +1,5 @@
 import React from "react";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail, Instagram, Facebook, Linkedin, Youtube } from "lucide-react";
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
@@ -89,10 +89,10 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Investment Info */}
+          {/* Investment Info & Social Media */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Investment Info</h3>
-            <div className="space-y-3">
+            <div className="space-y-3 mb-6">
               <div className="bg-gray-800 p-3 rounded-lg">
                 <div className="text-yellow-400 font-semibold">
                   Starting Price
@@ -102,6 +102,49 @@ const Footer = () => {
               <div className="bg-gray-800 p-3 rounded-lg">
                 <div className="text-green-400 font-semibold">Expected ROI</div>
                 <div className="text-lg font-bold">300-500%</div>
+              </div>
+            </div>
+
+            {/* Social Media Links */}
+            <div>
+              <h4 className="text-md font-semibold mb-3">Follow Us</h4>
+              <div className="flex space-x-3">
+                <a
+                  href="https://www.instagram.com/harishyaminfra"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300"
+                  title="Follow us on Instagram"
+                >
+                  <Instagram className="w-5 h-5 text-white" />
+                </a>
+                <a
+                  href="https://www.facebook.com/harishyaminfra"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300"
+                  title="Follow us on Facebook"
+                >
+                  <Facebook className="w-5 h-5 text-white" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/harishyaminfra"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300"
+                  title="Connect with us on LinkedIn"
+                >
+                  <Linkedin className="w-5 h-5 text-white" />
+                </a>
+                <a
+                  href="https://www.youtube.com/@harishyaminfra"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300"
+                  title="Subscribe to our YouTube channel"
+                >
+                  <Youtube className="w-5 h-5 text-white" />
+                </a>
               </div>
             </div>
           </div>
