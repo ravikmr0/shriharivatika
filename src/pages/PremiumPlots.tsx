@@ -99,7 +99,7 @@ const PremiumPlots = () => {
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <div className="text-center mb-6">
                 <img
-                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                  src="/images/plots/vatika.jpg"
                   alt="Standard Plot"
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
@@ -138,7 +138,7 @@ const PremiumPlots = () => {
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
                 <h3 className="text-2xl font-bold">Premium Plot</h3>
-                <div className="text-3xl font-bold mt-2">₹25-35 Lakhs</div>
+                <div className="text-3xl font-bold mt-2">₹20-25 Lakhs</div>
                 <div className="text-emerald-100">1500-1800 sq ft</div>
               </div>
               <ul className="space-y-2 mb-6">
@@ -167,7 +167,7 @@ const PremiumPlots = () => {
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <div className="text-center mb-6">
                 <img
-                  src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                  src="/images/plots/vatika_twon.jpg"
                   alt="Luxury Plot"
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
@@ -175,7 +175,7 @@ const PremiumPlots = () => {
                   Luxury Plot
                 </h3>
                 <div className="text-3xl font-bold text-emerald-600 mt-2">
-                  ₹40-60 Lakhs
+                  ₹30-40 Lakhs
                 </div>
                 <div className="text-gray-600">2000-2500 sq ft</div>
               </div>
@@ -250,7 +250,7 @@ const PremiumPlots = () => {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1664382953588-16ac85753ad3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src="/images/plots/varti.jpg"
                 alt="Investment Growth Chart"
                 className="rounded-2xl shadow-2xl"
               />

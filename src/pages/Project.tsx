@@ -31,7 +31,7 @@ const Project = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1461175827210-5ceac3e39dd2?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="/images/plots/vatika.jpg"
                 alt="Shri Hari Vatika Development"
                 className="rounded-2xl shadow-2xl"
               />
@@ -98,19 +98,19 @@ const Project = () => {
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="bg-white border-2 border-gray-200 p-8 rounded-2xl text-center">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Basic Plot</h3>
-              <div className="text-3xl font-bold text-emerald-600 mb-2">₹15 Lakhs</div>
+              <div className="text-3xl font-bold text-emerald-600 mb-2">₹12-17 Lakhs</div>
               <div className="text-gray-600 mb-6">1000 sq ft</div>
               <Button onClick={scrollToContact} className="w-full">Book Now</Button>
             </div>
             <div className="bg-emerald-600 text-white p-8 rounded-2xl text-center transform scale-105">
               <h3 className="text-2xl font-bold mb-4">Premium Plot</h3>
-              <div className="text-3xl font-bold mb-2">₹25 Lakhs</div>
+              <div className="text-3xl font-bold mb-2">₹20-25 Lakhs</div>
               <div className="text-emerald-100 mb-6">1500 sq ft</div>
               <Button onClick={scrollToContact} variant="outline" className="w-full border-white text-emerald-600 bg-white hover:bg-gray-100">Book Now</Button>
             </div>
             <div className="bg-white border-2 border-gray-200 p-8 rounded-2xl text-center">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Luxury Plot</h3>
-              <div className="text-3xl font-bold text-emerald-600 mb-2">₹40 Lakhs</div>
+              <div className="text-3xl font-bold text-emerald-600 mb-2">₹25-30 Lakhs</div>
               <div className="text-gray-600 mb-6">2000 sq ft</div>
               <Button onClick={scrollToContact} className="w-full">Book Now</Button>
             </div>
