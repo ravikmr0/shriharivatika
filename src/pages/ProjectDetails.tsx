@@ -27,11 +27,11 @@ const ProjectDetails = () => {
     1: {
       title: "Shri Hari Vatika",
       subtitle: "Premium Plots Near Jewar Airport",
-      location: "Sector-18 & 20, Yamuna Expressway",
+      location: "Yamuna Expressway",
       images: [
-        "https://images.unsplash.com/photo-1461175827210-5ceac3e39dd2?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.1.0",
-        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=2000&q=80",
-        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=2000&q=80"
+        "/images/plots/vatika_phase.jpg",
+        "/images/plots/vatika.jpg",
+      "/images/plots/vatika_twon.jpg"
       ],
       price: "15 Lac",
       priceRange: "₹15 - ₹60 Lakhs",
@@ -42,7 +42,7 @@ const ProjectDetails = () => {
       description: "Shri Hari Vatika offers premium residential plots strategically located near the upcoming Jewar Airport. This government-approved project provides an excellent investment opportunity with modern amenities and infrastructure.",
       highlights: [
         "Just 10 KM from Jewar Airport",
-        "Government Approved Project", 
+        " Approved Project", 
         "Gated Community with 24/7 Security",
         "Wide Roads (30-40 feet)",
         "Underground Electricity & Water",
@@ -62,7 +62,7 @@ const ProjectDetails = () => {
         "Road Width": "30-40 feet",
         "Electricity": "Underground cables",
         "Water Supply": "Borewell + Municipal",
-        "Approval": "Government Approved",
+        "Approval": " Approved",
         "Possession": "Immediate"
       },
       locationAdvantages: [
@@ -76,11 +76,12 @@ const ProjectDetails = () => {
     },
     2: {
       title: "Yamuna Authority Plots",
-      subtitle: "Government Approved Plots",
-      location: "Sector-18 & 20, Yamuna Expressway",
+      subtitle: " Approved Plots",
+      location: "Yamuna Expressway",
       images: [
         "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=2000&q=80",
-        "https://images.unsplash.com/photo-1461175827210-5ceac3e39dd2?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.1.0"
+        "/images/plots/vatika_phase.jpg",
+        "/images/plots/varti.jpg"
       ],
       price: "25 Lac",
       priceRange: "₹25 - ₹80 Lakhs",
@@ -103,7 +104,7 @@ const ProjectDetails = () => {
         { icon: Building, name: "Prime Location", description: "Strategic location on Yamuna Expressway" }
       ],
       specifications: {
-        "Authority": "YEIDA Approved",
+        "Authority": " Approved",
         "Location": "Yamuna Expressway",
         "Plot Type": "Residential/Commercial",
         "Documentation": "Clear & Complete",
@@ -120,7 +121,7 @@ const ProjectDetails = () => {
     // Add more projects as needed
   };
 
-  const project = projects[id as keyof typeof projects];
+  const project = projects[id as unknown as keyof typeof projects];
 
   if (!project) {
     return (

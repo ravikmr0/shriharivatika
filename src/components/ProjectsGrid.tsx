@@ -10,7 +10,7 @@ const ProjectsGrid = () => {
       title: "Shri Hari Vatika Phase-1",
       subtitle: " Plots Near Jewar Airport",
       location: "Yamuna Expressway",
-      image: "/images/plots/vatika.jpg",
+      image: "/images/plots/vatika_phase.jpg",
       price: "15 Lac",
       area: "1000-2000 Sq.Ft",
       size: "50-200 Sq.Yard",
@@ -24,13 +24,13 @@ const ProjectsGrid = () => {
       title: "Shri Hari Vatika Phase-2",
       subtitle: "Approved Plots",
       location: "Yamuna Expressway",
-      image: "/images/plots/vatika_phase.jpg",
+      image: "/images/plots/vatika.jpg",
       price: "25 Lac",
       area: "on Request",
       size: "on Request",
       type: "Authority Plots",
       status: "Available",
-      featured: false,
+      featured: true,
       highlights: ["Government Approved", "Prime Location", "High ROI"]
     },
     {
@@ -44,7 +44,7 @@ const ProjectsGrid = () => {
       size: "on Request",
       type: "Farm House",
       status: "Available",
-      featured: false,
+      featured: true,
       highlights: ["Farm House", "Natural Environment", "Investment Opportunity"]
     },
    /* {
