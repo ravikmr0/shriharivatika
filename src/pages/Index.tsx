@@ -15,8 +15,8 @@ const Index = () => {
       <Hero />
       <ProjectsGrid />
       <WhyJewar />
-      <Gallery />
       <IntroVideo />
+      <Gallery />
       <Testimonials />
       <Footer />
       <FloatingButtons />
