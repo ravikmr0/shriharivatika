@@ -6,6 +6,7 @@ import Testimonials from '../components/Testimonials';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import FloatingButtons from '../components/FloatingButtons';
+import IntroVideo from '../components/IntroVideo';
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <ProjectsGrid />
       <WhyJewar />
       <Gallery />
+      <IntroVideo />
       <Testimonials />
       <Footer />
       <FloatingButtons />
