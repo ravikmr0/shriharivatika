@@ -49,8 +49,8 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Animated Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/90 via-emerald-800/85 to-emerald-700/90">
+      {/* Neutral Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900/90 via-gray-800/85 to-gray-700/90">
         {/* Dynamic Background Images */}
         <div className="absolute inset-0">
           {backgroundImages.map((image, index) => (
@@ -63,7 +63,7 @@ const Hero = () => {
               }`}
               style={{
                 backgroundImage: `url(${image.url})`,
-                filter: "brightness(0.6) contrast(1.2)",
+                filter: "brightness(0.4) contrast(1.2) grayscale(0.3)",
               }}
             />
           ))}
@@ -71,9 +71,9 @@ const Hero = () => {
 
         {/* Animated Geometric Shapes */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-10 w-32 h-32 bg-yellow-400/10 rounded-full blur-xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-40 h-40 bg-emerald-400/10 rounded-full blur-xl animate-pulse" style={{ animationDelay: "1s" }}></div>
-          <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-blue-400/10 rounded-full blur-xl animate-pulse" style={{ animationDelay: "2s" }}></div>
+          <div className="absolute top-20 left-10 w-32 h-32 bg-white/5 rounded-full blur-xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-40 h-40 bg-gray-400/10 rounded-full blur-xl animate-pulse" style={{ animationDelay: "1s" }}></div>
+          <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-gray-300/10 rounded-full blur-xl animate-pulse" style={{ animationDelay: "2s" }}></div>
         </div>
 
         {/* Floating Elements */}
@@ -105,12 +105,12 @@ const Hero = () => {
         <div className="max-w-5xl mx-auto">
           {/* Premium Badge */}
           <div 
-            className={`inline-flex items-center bg-gradient-to-r from-yellow-500/20 to-yellow-600/20 border border-yellow-500/30 rounded-full px-6 py-3 mb-8 backdrop-blur-sm transition-all duration-1000 ${
+            className={`inline-flex items-center bg-white/10 border border-white/20 rounded-full px-6 py-3 mb-8 backdrop-blur-sm transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            <Star className="w-5 h-5 text-yellow-400 mr-3 animate-spin" style={{ animationDuration: "3s" }} />
-            <span className="text-yellow-300 font-semibold text-lg">Premium Investment Opportunity</span>
+            <Star className="w-5 h-5 text-white mr-3 animate-spin" style={{ animationDuration: "3s" }} />
+            <span className="text-white font-semibold text-lg">Premium Investment Opportunity</span>
           </div>
 
           {/* Main Headlines */}
@@ -121,16 +121,16 @@ const Hero = () => {
           >
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Invest in{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 animate-pulse">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-300 animate-pulse">
                 Tomorrow
               </span>
             </h1>
             
-            <h2 className="text-2xl md:text-3xl mb-4 text-emerald-100 font-medium">
+            <h2 className="text-2xl md:text-3xl mb-4 text-gray-200 font-medium">
               Premium Jewar Airport Plots
             </h2>
             
-            <p className="text-xl md:text-2xl mb-12 text-emerald-200 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl mb-12 text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Secure your future with India's largest airport development
             </p>
           </div>
@@ -142,15 +142,15 @@ const Hero = () => {
             }`}
           >
             <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-xl px-6 py-3 hover:bg-white/20 transition-all duration-300">
-              <Shield className="w-6 h-6 text-green-400 mr-3" />
+              <Shield className="w-6 h-6 text-gray-200 mr-3" />
               <span className="font-semibold">Government Approved</span>
             </div>
             <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-xl px-6 py-3 hover:bg-white/20 transition-all duration-300">
-              <MapPin className="w-6 h-6 text-emerald-400 mr-3" />
+              <MapPin className="w-6 h-6 text-gray-200 mr-3" />
               <span className="font-semibold">10 KM from Airport</span>
             </div>
             <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-xl px-6 py-3 hover:bg-white/20 transition-all duration-300">
-              <Star className="w-6 h-6 text-yellow-400 mr-3" />
+              <Star className="w-6 h-6 text-gray-200 mr-3" />
               <span className="font-semibold">Gated Society</span>
             </div>
           </div>
@@ -162,7 +162,7 @@ const Hero = () => {
             }`}
           >
             <Link to="/contact">
-              <Button className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-bold px-10 py-4 text-xl rounded-xl shadow-2xl transition-all duration-300 hover:shadow-yellow-500/25 hover:scale-105 transform">
+              <Button className="bg-white text-gray-900 hover:bg-gray-100 font-bold px-10 py-4 text-xl rounded-xl shadow-2xl transition-all duration-300 hover:shadow-white/25 hover:scale-105 transform">
                 Get Brochure
                 <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -170,7 +170,7 @@ const Hero = () => {
             <Link to="/contact">
               <Button
                 variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-emerald-900 font-bold px-10 py-4 text-xl rounded-xl backdrop-blur-sm transition-all duration-300 hover:scale-105 transform"
+                className="border-2 border-white text-white hover:bg-white hover:text-gray-900 font-bold px-10 py-4 text-xl rounded-xl backdrop-blur-sm transition-all duration-300 hover:scale-105 transform"
               >
                 Book Site Visit
               </Button>
@@ -184,28 +184,28 @@ const Hero = () => {
             }`}
           >
             <div className="text-center group hover:scale-110 transition-transform duration-300">
-              <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2 animate-pulse">
+              <div className="text-3xl md:text-4xl font-bold text-white mb-2 animate-pulse">
                 ₹15L+
               </div>
-              <div className="text-sm text-emerald-200">Starting Price</div>
+              <div className="text-sm text-gray-300">Starting Price</div>
             </div>
             <div className="text-center group hover:scale-110 transition-transform duration-300">
-              <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2 animate-pulse" style={{ animationDelay: "0.5s" }}>
+              <div className="text-3xl md:text-4xl font-bold text-white mb-2 animate-pulse" style={{ animationDelay: "0.5s" }}>
                 10 KM
               </div>
-              <div className="text-sm text-emerald-200">From Airport</div>
+              <div className="text-sm text-gray-300">From Airport</div>
             </div>
             <div className="text-center group hover:scale-110 transition-transform duration-300">
-              <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2 animate-pulse" style={{ animationDelay: "1s" }}>
+              <div className="text-3xl md:text-4xl font-bold text-white mb-2 animate-pulse" style={{ animationDelay: "1s" }}>
                 300%
               </div>
-              <div className="text-sm text-emerald-200">Expected ROI</div>
+              <div className="text-sm text-gray-300">Expected ROI</div>
             </div>
             <div className="text-center group hover:scale-110 transition-transform duration-300">
-              <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2 animate-pulse" style={{ animationDelay: "1.5s" }}>
+              <div className="text-3xl md:text-4xl font-bold text-white mb-2 animate-pulse" style={{ animationDelay: "1.5s" }}>
                 500+
               </div>
-              <div className="text-sm text-emerald-200">Happy Families</div>
+              <div className="text-sm text-gray-300">Happy Families</div>
             </div>
           </div>
         </div>
@@ -219,7 +219,7 @@ const Hero = () => {
             onClick={() => setCurrentSlide(index)}
             className={`w-4 h-4 rounded-full transition-all duration-300 ${
               index === currentSlide
-                ? "bg-yellow-400 scale-125 shadow-lg"
+                ? "bg-white scale-125 shadow-lg"
                 : "bg-white/50 hover:bg-white/70"
             }`}
           />
