@@ -8,7 +8,7 @@ const ProjectsGrid = () => {
     {
       id: 1,
       title: "Shri Hari Vatika Phase-1",
-      subtitle: " Plots Near Jewar Airport",
+      subtitle: "  Residential  Plots",
       location: "Yamuna Expressway",
       image: "/images/plots/vatika_phase.jpg",
       price: "16 Lac",
@@ -22,7 +22,7 @@ const ProjectsGrid = () => {
     {
       id: 2,
       title: "Shri Hari Vatika Phase-2",
-      subtitle: "Approved Plots",
+      subtitle: "commercial Plots",
       location: "Yamuna Expressway",
       image: "/images/plots/vatika.jpg",
       price: "17 Lac",
@@ -36,7 +36,7 @@ const ProjectsGrid = () => {
     {
       id: 3,
       title: "Shri Hari Vatika Farm House",
-      subtitle: "Farm House in Jewar",
+      subtitle: "Corner Plots",
       location: "Jewar, Greater Noida",
       image: "/images/plots/vatika_home.jpg",
       price: "18 Lac",

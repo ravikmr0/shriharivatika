@@ -57,7 +57,7 @@ const AllProjects = () => {
    {
       id: 4,
       title: "Residential Plots",
-      subtitle: "Premium Residential Complex",
+      subtitle: "Premium Commercial Plots",
       location: "Jewar, Greater Noida",
       image: "/images/plots/vatika_home.jpg",
       price: "16-20 Lac",
@@ -71,7 +71,7 @@ const AllProjects = () => {
     {
       id: 5,
       title: "Shri Hari Vatika Luxury",
-      subtitle: "Luxury Residential Project",
+      subtitle: "Luxury Residential Plots",
       location: "Noida Extension",
       image: "/images/plots/vatika.jpg",
       price: "18-20 Lac",

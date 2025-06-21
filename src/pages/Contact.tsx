@@ -143,6 +143,7 @@ const Contact = () => {
                 <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
                   <div className="text-center text-gray-600">
                     <MapPin className="w-12 h-12 mx-auto mb-2" />
+                    
                     <div>Interactive Map Location</div>
                   </div>
                 </div>

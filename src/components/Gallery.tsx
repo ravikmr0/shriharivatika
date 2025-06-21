@@ -62,7 +62,7 @@ const Gallery = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+         <div className="text-center mt-12">
           <div className="bg-white p-8 rounded-2xl shadow-lg max-w-2xl mx-auto">
             <h3 className="text-xl font-bold text-gray-900 mb-4">Want to See More?</h3>
             <p className="text-gray-600 mb-6">
@@ -71,8 +71,8 @@ const Gallery = () => {
             <button className="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white font-semibold px-8 py-3 rounded-lg hover:from-emerald-700 hover:to-emerald-800 transition-all duration-300">
               Schedule Site Visit
             </button>
-          </div>
-        </div>
+          </div> 
+        </div> 
       </div>
     </section>
   );
