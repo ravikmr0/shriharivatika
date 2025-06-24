@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -138,14 +137,31 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Map */}
+              {/* Interactive Google Map */}
               <div className="mt-8">
-                <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                  <div className="text-center text-gray-600">
-                    <MapPin className="w-12 h-12 mx-auto mb-2" />
-                    
-                    <div>Interactive Map Location</div>
-                  </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Our Location</h3>
+                <div className="rounded-lg overflow-hidden shadow-lg border border-gray-200">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.8234567890123!2d77.3621!3d28.5355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce626851f7009%3A0x621185133cdf6b9!2sBhutani%20Alphathum!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                    width="100%"
+                    height="300"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Harishyam Infra Office Location"
+                  ></iframe>
+                </div>
+                <div className="mt-4 text-center">
+                  <a
+                    href="https://maps.app.goo.gl/81JphraK4RRLfCi48"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium"
+                  >
+                    <MapPin className="w-4 h-4 mr-2" />
+                    Open in Google Maps
+                  </a>
                 </div>
               </div>
             </div>
