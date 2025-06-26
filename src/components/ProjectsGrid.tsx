@@ -22,7 +22,7 @@ const ProjectsGrid = () => {
     {
       id: 2,
       title: "Shri Hari Vatika Phase-2",
-      subtitle: "commercial Plots",
+      subtitle: "Two-Side-Open Plots",
       location: "Yamuna Expressway",
       image: "/images/plots/vatika.jpg",
       price: "17 Lac",
@@ -36,7 +36,7 @@ const ProjectsGrid = () => {
     {
       id: 3,
       title: "Shri Hari Vatika Farm House",
-      subtitle: "Corner Plots",
+      subtitle: "Commercial Plots",
       location: "Jewar, Greater Noida",
       image: "/images/plots/vatika_home.jpg",
       price: "18 Lac",

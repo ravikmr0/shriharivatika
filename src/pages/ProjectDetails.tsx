@@ -280,10 +280,13 @@ const ProjectDetails = () => {
                   </div>
 
                   <div className="space-y-3">
-                    <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white">
-                      <Phone className="w-4 h-4 mr-2" />
-                      Call Now
-                    </Button>
+                   <a href="tel:+917678538328" className="w-full block">
+                   <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white flex items-center justify-center">
+                     <Phone className="w-4 h-4 mr-2" />
+                     Call Now
+                   </Button>
+                  </a>
+
                     <Button variant="outline" className="w-full border-emerald-600 text-emerald-600 hover:bg-emerald-50">
                       <Calendar className="w-4 h-4 mr-2" />
                       Schedule Visit
