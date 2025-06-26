@@ -34,9 +34,9 @@ const ProjectsGrid = () => {
       highlights: ["Government Approved", "Prime Location", "High ROI"]
     },
     {
-      id: 3,
+      id: 2, // 3 rd project has same id as 2nd project
       title: "Shri Hari Vatika Farm House",
-      subtitle: "Commercial Plots",
+      subtitle: "corner Plots",
       location: "Jewar, Greater Noida",
       image: "/images/plots/vatika_home.jpg",
       price: "18 Lac",
