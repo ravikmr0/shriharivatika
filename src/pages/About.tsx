@@ -77,10 +77,10 @@ const About = () => {
                 className="w-full h-64 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Dheraj Sharma</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Dheeraj Sharma</h3>
                 <p className="text-emerald-600 font-medium mb-3">Chief Executive Officer</p>
                 <p className="text-gray-600 text-sm">
-                  With over 15 years in real estate, Rajesh leads our vision of creating sustainable communities.
+                  With over 15 years in real estate, Dheeraj leads our vision of creating sustainable communities.
                 </p>
               </div>
             </div>
@@ -102,15 +102,15 @@ const About = () => {
 
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                src="/images/about_img/team-leader.png"
                 alt="CTO"
                 className="w-full h-64 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Amit Gupta</h3>
-                <p className="text-emerald-600 font-medium mb-3">Head of Development</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Soniya Yadav</h3>
+                <p className="text-emerald-600 font-medium mb-3">Team Leader</p>
                 <p className="text-gray-600 text-sm">
-                  Amit oversees project development and ensures quality construction standards.
+                  Soniya oversees project development and ensures quality construction standards.
                 </p>
               </div>
             </div>
