@@ -92,7 +92,7 @@ const About = () => {
                 className="w-full h-64 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Sudheer Yadav</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Sudheer Kumar</h3>
                 <p className="text-emerald-600 font-medium mb-3">Chief Operating Officer</p>
                 <p className="text-gray-600 text-sm">
                   Shudheer ensures operational excellence and customer satisfaction across all projects.
