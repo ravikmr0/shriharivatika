@@ -48,12 +48,12 @@ const About = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src="/images/about_img/layout.jpg"
                 alt="Modern Real Estate Development"
                 className="rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg">
-                <div className="text-2xl font-bold text-emerald-600">₹50Cr+</div>
+                <div className="text-2xl font-bold text-emerald-600">₹500Cr+</div>
                 <div className="text-gray-600 text-sm">Projects Delivered</div>
               </div>
             </div>
@@ -72,12 +72,12 @@ const About = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                src="/images/about_img/ceo.jpg"
                 alt="CEO"
                 className="w-full h-64 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Rajesh Kumar</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Dheraj Sharma</h3>
                 <p className="text-emerald-600 font-medium mb-3">Chief Executive Officer</p>
                 <p className="text-gray-600 text-sm">
                   With over 15 years in real estate, Rajesh leads our vision of creating sustainable communities.
@@ -129,25 +129,25 @@ const About = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="space-y-6">
               <img 
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                src="images/about_img/front.jpg"
                 alt="Office Building"
                 className="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               />
               <img 
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Team Meeting"
-                className="w-full h-32 object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                src="images/about_img/front.jpg"
+                alt="Office Building"
+                className="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               />
             </div>
             
             <div className="space-y-6">
               <img 
-                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                src="images/about_img/plot_rod.jpg"
                 alt="Business Meeting"
                 className="w-full h-32 object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               />
               <img 
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                src="images/about_img/shop.jpg"
                 alt="Modern Architecture"
                 className="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               />
@@ -155,12 +155,12 @@ const About = () => {
             
             <div className="space-y-6">
               <img 
-                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                src="images/about_img/temple.jpg"
                 alt="Team Collaboration"
                 className="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               />
               <img 
-                src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                src="images/about_img/shv1.jpg"
                 alt="Construction Site"
                 className="w-full h-32 object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               />
@@ -168,12 +168,12 @@ const About = () => {
             
             <div className="space-y-6">
               <img 
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                src="images/about_img/shv2.jpg"
                 alt="Office Environment"
                 className="w-full h-32 object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               />
               <img 
-                src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                src="images/about_img/shv3.jpg"
                 alt="Project Planning"
                 className="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               />
