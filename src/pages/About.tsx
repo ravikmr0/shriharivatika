@@ -87,15 +87,15 @@ const About = () => {
 
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1494790108755-2616c6d4e6e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="COO"
+                src="/images/about_img/co-founder.png"
+                alt="CO-Founder"
                 className="w-full h-64 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Priya Sharma</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Sudheer Yadav</h3>
                 <p className="text-emerald-600 font-medium mb-3">Chief Operating Officer</p>
                 <p className="text-gray-600 text-sm">
-                  Priya ensures operational excellence and customer satisfaction across all projects.
+                  Shudheer ensures operational excellence and customer satisfaction across all projects.
                 </p>
               </div>
             </div>
