@@ -134,7 +134,7 @@ const About = () => {
                 className="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               />
               <img 
-                src="images/about_img/front.jpg"
+                src="images/about_img/shv4.jpg"
                 alt="Office Building"
                 className="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               />
@@ -142,7 +142,7 @@ const About = () => {
             
             <div className="space-y-6">
               <img 
-                src="images/about_img/plot_rod.jpg"
+                src="images/about_img/plot-rod.jpg"
                 alt="Business Meeting"
                 className="w-full h-32 object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               />
