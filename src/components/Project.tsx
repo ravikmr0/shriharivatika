@@ -56,7 +56,7 @@ const Project = () => {
               <div className="flex items-center">
                 <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
                 <span className="text-gray-700">
-                  Government Approved Project
+                   Approved Project
                 </span>
               </div>
               <div className="flex items-center">
@@ -92,7 +92,7 @@ const Project = () => {
               <div className="space-y-2 text-sm text-emerald-800">
                 <div className="flex items-center">
                   <MapPin className="w-4 h-4 mr-2" />
-                  <span>5 KM from Jewar Airport</span>
+                  <span>10 KM from Jewar Airport</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-4 h-4 mr-2" />
@@ -129,8 +129,8 @@ const Project = () => {
                   Easy Payment Options
                 </h4>
                 <ul className="text-sm text-green-700 space-y-1">
-                  <li>• 20% Down Payment</li>
-                  <li>• Up to 60 months EMI</li>
+                  <li>• 30% Down Payment</li>
+                  <li>• Up to 36 months EMI</li>
                   <li>• No Hidden Charges</li>
                   <li>• Flexible Payment Schedule</li>
                 </ul>
