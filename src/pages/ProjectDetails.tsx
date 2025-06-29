@@ -75,7 +75,7 @@ const ProjectDetails = () => {
       ]
     },
     2: {
-      title: "Yamuna Authority Plots",
+      title: "ShriHari Vatika Plots",
       subtitle: " Approved Plots",
       location: "Yamuna Expressway",
       images: [
@@ -87,11 +87,11 @@ const ProjectDetails = () => {
       priceRange: "₹25 - ₹80 Lakhs",
       area: "On Request",
       size: "On Request",
-      type: "Authority Plots",
+      type: "Commercial Plots",
       status: "Available",
-      description: "Premium authority plots approved by Yamuna Expressway Industrial Development Authority, offering excellent investment opportunities with guaranteed returns.",
+      description: "Premium Commercial Plots approved by Yamuna Expressway Industrial Development Authority, offering excellent investment opportunities with guaranteed returns.",
       highlights: [
-        "Yamuna Authority Approved",
+        "Yamuna Expressway Plots", ",
         "Prime Location on Expressway",
         "High Appreciation Potential",
         "Clear Title Documents",
@@ -99,7 +99,7 @@ const ProjectDetails = () => {
         "Strategic Investment Location"
       ],
       amenities: [
-        { icon: Shield, name: "Authority Approved", description: "Officially approved by YEIDA" },
+        { icon: Shield, name: "Shri Hari Vatika Approved", description: "Officially approved " },
         { icon: TrendingUp, name: "High ROI", description: "Excellent appreciation potential" },
         { icon: Building, name: "Prime Location", description: "Strategic location on Yamuna Expressway" }
       ],

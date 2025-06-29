@@ -30,14 +30,14 @@ const EMIOptions = () => {
                   <CreditCard className="w-6 h-6 text-yellow-600 mr-4 mt-1" />
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Low Down Payment</h3>
-                    <p className="text-gray-600">Start with just 20% down payment</p>
+                    <p className="text-gray-600">Start with just 30% down payment</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <Calculator className="w-6 h-6 text-emerald-600 mr-4 mt-1" />
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Extended EMI Terms</h3>
-                    <p className="text-gray-600">Up to 60 months EMI options available</p>
+                    <p className="text-gray-600">Up to 36 months EMI options available</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -54,15 +54,15 @@ const EMIOptions = () => {
               <div className="space-y-4">
                 <div className="bg-white p-4 rounded-lg">
                   <div className="text-sm text-gray-600">Plot Price</div>
-                  <div className="text-2xl font-bold text-emerald-600">₹25,00,000</div>
+                  <div className="text-2xl font-bold text-emerald-600">₹16,00,000</div>
                 </div>
                 <div className="bg-white p-4 rounded-lg">
-                  <div className="text-sm text-gray-600">Down Payment (20%)</div>
-                  <div className="text-xl font-semibold text-gray-900">₹5,00,000</div>
+                  <div className="text-sm text-gray-600">Down Payment (30%)</div>
+                  <div className="text-xl font-semibold text-gray-900">₹4,80,000</div>
                 </div>
                 <div className="bg-white p-4 rounded-lg">
-                  <div className="text-sm text-gray-600">EMI for 60 months</div>
-                  <div className="text-xl font-semibold text-green-600">₹38,333/month</div>
+                  <div className="text-sm text-gray-600">EMI for 36 months</div>
+                  <div className="text-xl font-semibold text-green-600">₹31,111/month</div>
                 </div>
               </div>
               <Button className="w-full mt-6">Get Detailed EMI Plan</Button>
