@@ -91,7 +91,7 @@ const ProjectDetails = () => {
       status: "Available",
       description: "Premium Commercial Plots approved by Yamuna Expressway Industrial Development Authority, offering excellent investment opportunities with guaranteed returns.",
       highlights: [
-        "Yamuna Expressway Plots", ",
+        "Yamuna Expressway Plots",
         "Prime Location on Expressway",
         "High Appreciation Potential",
         "Clear Title Documents",
