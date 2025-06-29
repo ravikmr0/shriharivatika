@@ -157,8 +157,8 @@ const IntroVideo: React.FC = () => {
                 )}
               </div>
 
-              {/* Video Stats Overlay */}
-              <div className="absolute -bottom-6 left-4 right-4 md:left-8 md:right-8">
+              {/* Video Stats Overlay - Hidden on Mobile */}
+              <div className="absolute -bottom-6 left-4 right-4 md:left-8 md:right-8 hidden md:block">
                 <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 md:p-6">
                   <div className="grid grid-cols-3 gap-4 text-center">
                     {stats.map((stat, index) => (
