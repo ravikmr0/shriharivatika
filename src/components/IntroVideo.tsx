@@ -82,12 +82,13 @@ const IntroVideo: React.FC = () => {
                 <div className="relative aspect-video">
                   <iframe
                     ref={videoRef}
-                    src="https://www.youtube.com/embed/s0w7XiQ74_U?autoplay=0&mute=1&controls=1&rel=0&modestbranding=1&showinfo=0"
+                    src="https://www.youtube.com/embed/s0w7XiQ74_U?autoplay=0&mute=1&controls=1&rel=0&modestbranding=1&showinfo=0&enablejsapi=1"
                     title="All Project Overview - Harishyam Infra"
                     className="absolute top-0 left-0 w-full h-full rounded-2xl md:rounded-3xl"
                     frameBorder={0}
                     allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
                     allowFullScreen
+                    onLoad={() => setIsLoading(false)}
                   ></iframe>
                 </div>
 
