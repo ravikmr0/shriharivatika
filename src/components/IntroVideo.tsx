@@ -9,6 +9,7 @@ const IntroVideo: React.FC = () => {
   const [duration, setDuration] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [showControls, setShowControls] = useState(false);
+  const [videoError, setVideoError] = useState(false);
   const videoRef = useRef<HTMLIFrameElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -27,6 +28,16 @@ const IntroVideo: React.FC = () => {
         containerRef.current.requestFullscreen();
       }
     }
+  };
+
+  const handleVideoLoad = () => {
+    setIsLoading(false);
+    setVideoError(false);
+  };
+
+  const handleVideoError = () => {
+    setIsLoading(false);
+    setVideoError(true);
   };
 
   const stats = [
@@ -80,16 +91,35 @@ const IntroVideo: React.FC = () => {
                 
                 {/* Video Iframe */}
                 <div className="relative aspect-video">
-                  <iframe
-                    ref={videoRef}
-                    src="https://www.youtube.com/embed/s0w7XiQ74_U?autoplay=0&mute=1&controls=1&rel=0&modestbranding=1&showinfo=0&enablejsapi=1"
-                    title="All Project Overview - Harishyam Infra"
-                    className="absolute top-0 left-0 w-full h-full rounded-2xl md:rounded-3xl"
-                    frameBorder={0}
-                    allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
-                    allowFullScreen
-                    onLoad={() => setIsLoading(false)}
-                  ></iframe>
+                  {!videoError ? (
+                    <iframe
+                      ref={videoRef}
+                      src="https://www.youtube.com/embed/s0w7XiQ74_U?autoplay=0&mute=0&controls=1&rel=0&modestbranding=1&showinfo=0&enablejsapi=1&origin=https://bolt.new"
+                      title="All Project Overview - Harishyam Infra"
+                      className="absolute top-0 left-0 w-full h-full rounded-2xl md:rounded-3xl"
+                      frameBorder={0}
+                      allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+                      allowFullScreen
+                      onLoad={handleVideoLoad}
+                      onError={handleVideoError}
+                    ></iframe>
+                  ) : (
+                    <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl md:rounded-3xl flex items-center justify-center">
+                      <div className="text-center text-white p-8">
+                        <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <Play className="w-8 h-8 text-white" />
+                        </div>
+                        <h3 className="text-xl font-bold mb-2">Project Overview Video</h3>
+                        <p className="text-slate-300 mb-4">Experience our premium real estate projects</p>
+                        <Button 
+                          onClick={() => window.open('https://youtu.be/s0w7XiQ74_U', '_blank')}
+                          className="bg-emerald-600 hover:bg-emerald-700"
+                        >
+                          Watch on YouTube
+                        </Button>
+                      </div>
+                    </div>
+                  )}
                 </div>
 
                 {/* Custom Overlay Controls */}
