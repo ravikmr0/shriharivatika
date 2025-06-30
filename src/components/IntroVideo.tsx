@@ -237,7 +237,7 @@ const IntroVideo: React.FC = () => {
                 
                 <Button 
                   variant="outline"
-                  className="w-full border-2 border-white/30 text-white hover:bg-white/10 py-3 md:py-4 text-base md:text-lg font-semibold rounded-xl backdrop-blur-sm transition-all duration-300"
+                  className="w-full border-2 border-white/30 text-slate-900 hover:bg-white/10 py-3 md:py-4 text-base md:text-lg font-semibold rounded-xl backdrop-blur-sm transition-all duration-300"
                   onClick={() => window.location.href = '/all-projects'}
                 >
                   View All Projects
@@ -290,7 +290,7 @@ const IntroVideo: React.FC = () => {
               </Button>
               <Button 
                 variant="outline"
-                className="flex-1 border-2 border-white/30 text-white hover:bg-white/10 py-3 px-6 rounded-xl backdrop-blur-sm transition-all duration-300"
+                className="flex-1 border-2 border-white/30 text-slate-950 hover:bg-white/10 py-3 px-6 rounded-xl backdrop-blur-sm transition-all duration-300"
                 onClick={() => window.location.href = '/premium-plots'}
               >
                 View Plots
