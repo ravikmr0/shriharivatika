@@ -72,7 +72,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <img 
-                src="/images/about_img/ceo.jpg"
+                src="/images/about_img/ceo1.jpg"
                 alt="CEO"
                 className="w-full h-64 object-cover"
               />

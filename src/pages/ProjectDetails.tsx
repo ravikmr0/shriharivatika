@@ -83,13 +83,13 @@ const ProjectDetails = () => {
         "/images/plots/vatika_phase.jpg",
         "/images/plots/varti.jpg"
       ],
-      price: "25 Lac",
-      priceRange: "₹25 - ₹80 Lakhs",
+      price: "16 Lac",
+      priceRange: "₹16 - ₹20 Lakhs",
       area: "On Request",
       size: "On Request",
       type: "Commercial Plots",
       status: "Available",
-      description: "Premium Commercial Plots approved by Yamuna Expressway Industrial Development Authority, offering excellent investment opportunities with guaranteed returns.",
+      description: "Premium Commercial Plots approved by Yamuna Expressway Industrial Development, offering excellent investment opportunities with guaranteed returns.",
       highlights: [
         "Yamuna Expressway Plots",
         "Prime Location on Expressway",
@@ -104,7 +104,7 @@ const ProjectDetails = () => {
         { icon: Building, name: "Prime Location", description: "Strategic location on Yamuna Expressway" }
       ],
       specifications: {
-        "Authority": " Approved",
+        "Shri Hari Vatika": " Approved",
         "Location": "Yamuna Expressway",
         "Plot Type": "Residential/Commercial",
         "Documentation": "Clear & Complete",
