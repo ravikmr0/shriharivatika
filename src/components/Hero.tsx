@@ -74,7 +74,7 @@ const HeroSection = () => {
                 />
                 {/* Overlay Text */}
                 <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/50 to-black/40 flex flex-col items-center justify-center text-center p-6 sm:p-10 space-y-4">
-                  <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight drop-shadow-[0_5px_15px_rgba(0,0,0,0.5)] animate-fade-in-up">
+                  <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight drop-shadow-[0_5px_15px_rgba(0,0,0,0.5)] animate-fade-in-up">
                    Jewar International Airport
                   </h1>
                   <p className="text-white text-lg sm:text-xl md:text-2xl font-medium drop-shadow-md animate-fade-in-up delay-100">
