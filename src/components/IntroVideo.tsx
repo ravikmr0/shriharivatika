@@ -3,8 +3,8 @@ import { Play, Pause, Volume2, VolumeX, Maximize, RotateCcw, Star, Award, Trendi
 import { Button } from "@/components/ui/button";
 
 const IntroVideo: React.FC = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [isMuted, setIsMuted] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true); // Start with autoplay
+  const [isMuted, setIsMuted] = useState(true); // Start muted for autoplay
   const [showControls, setShowControls] = useState(false);
   const [videoError, setVideoError] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -38,6 +38,9 @@ const IntroVideo: React.FC = () => {
   // Extract video ID from the YouTube URL
   const youtubeUrl = "https://youtu.be/s0w7XiQ74_U?si=H_wcXSrpkHpuK6u1";
   const videoId = "s0w7XiQ74_U";
+
+  // Build YouTube embed URL with autoplay and mute parameters
+  const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=1&rel=0&modestbranding=1&showinfo=0&enablejsapi=1&fs=1&cc_load_policy=0&iv_load_policy=3&autohide=1&loop=1&playlist=${videoId}`;
 
   return (
     <section className="relative py-16 md:py-20 lg:py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900 overflow-hidden">
@@ -85,13 +88,14 @@ const IntroVideo: React.FC = () => {
                 <div className="relative aspect-video">
                   {!videoError ? (
                     <iframe
-                      src={`https://www.youtube.com/embed/${videoId}?autoplay=0&mute=0&controls=1&rel=0&modestbranding=1&showinfo=0&enablejsapi=1&fs=1&cc_load_policy=0&iv_load_policy=3&autohide=1`}
+                      src={embedUrl}
                       title="All Project Overview - Harishyam Infra"
                       className="absolute top-0 left-0 w-full h-full rounded-2xl md:rounded-3xl"
                       frameBorder={0}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
                       allowFullScreen
                       onError={handleVideoError}
+                      loading="lazy"
                     ></iframe>
                   ) : (
                     <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl md:rounded-3xl flex items-center justify-center">
@@ -126,6 +130,19 @@ const IntroVideo: React.FC = () => {
                     </div>
                   </div>
                 </div>
+
+                {/* Custom Play/Pause Overlay (Optional) */}
+                {showControls && (
+                  <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    <div className="bg-white/20 backdrop-blur-sm rounded-full p-4">
+                      {isPlaying ? (
+                        <Pause className="w-8 h-8 text-white" />
+                      ) : (
+                        <Play className="w-8 h-8 text-white" />
+                      )}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
