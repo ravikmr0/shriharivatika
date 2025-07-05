@@ -87,7 +87,7 @@ const About = () => {
 
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <img 
-                src="/images/about_img/co-founder.png"
+                src="/images/about_img/sudheer.jpg"
                 alt="CO-Founder"
                 className="w-full h-64 object-cover"
               />
