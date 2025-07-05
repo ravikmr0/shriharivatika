@@ -102,15 +102,15 @@ const About = () => {
 
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <img 
-                src="/images/about_img/team-leader.png"
+                src="/images/about_img/abhishek.jpg"
                 alt="CTO"
                 className="w-full h-64 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Soniya Yadav</h3>
-                <p className="text-emerald-600 font-medium mb-3">Team Leader</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Abhishek Rajput</h3>
+                <p className="text-emerald-600 font-medium mb-3">Managing Director</p>
                 <p className="text-gray-600 text-sm">
-                  Soniya oversees project development and ensures quality construction standards.
+                  Abhishek oversees Managing Director and ensures quality construction standards.
                 </p>
               </div>
             </div>
