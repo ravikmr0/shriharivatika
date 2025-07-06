@@ -59,7 +59,7 @@ const AllProjects = () => {
       title: "Residential Plots",
       subtitle: "Premium Commercial Plots",
       location: "Jewar, Greater Noida",
-      image: "/images/plots/vatika_phase1.jpg",
+      image: "/images/plots/vatika_home.png",
       price: "16-20 Lac",
       area: "100 Gaj",
       size: "100 gaj",
