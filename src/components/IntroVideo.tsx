@@ -168,6 +168,7 @@ const IntroVideo: React.FC = () => {
                 </div>
               </div>
 
+             
               {/* Quick Actions */}
               <div className="space-y-4">
                 <Button 
@@ -184,7 +185,7 @@ const IntroVideo: React.FC = () => {
                 >
                   View All Projects
                 </Button>
-              </div>
+              </div> 
 
               {/* Contact Info */}
               <div className="bg-gradient-to-r from-emerald-600/20 to-blue-600/20 border border-emerald-500/30 rounded-2xl p-6">
