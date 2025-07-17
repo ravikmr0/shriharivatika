@@ -115,6 +115,13 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="flex items-center">
+                  <Phone className="w-6 h-6 text-emerald-600 mr-4" />
+                  <div>
+                    <div className="font-semibold text-gray-900">Phone</div>
+                    <div className="text-gray-600">+91 7042077126</div>
+                  </div>
+                </div>
+                <div className="flex items-center">
                   <Mail className="w-6 h-6 text-emerald-600 mr-4" />
                   <div>
                     <div className="font-semibold text-gray-900">Email</div>
@@ -154,7 +161,7 @@ const Contact = () => {
                 </div>
                 <div className="mt-4 text-center">
                   <a
-                    href="https://maps.app.goo.gl/81JphraK4RRLfCi48"
+                    href="https://maps.app.goo.gl/edVBrAy8UHSZpYf96"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium"
