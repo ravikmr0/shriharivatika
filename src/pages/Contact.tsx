@@ -10,13 +10,13 @@ const Contact = () => {
     name: '',
     phone: '',
     email: '',
-    message: ''
+    message: '',
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -25,7 +25,7 @@ const Contact = () => {
 
     try {
       const response = await fetch(
-        'https://script.google.com/macros/s/AKfycbyVN9KvZyZqSWMJ9gvFCbFum4cYAbRgWwNmQ3FeJKeB4Wbz1VobJ4NEXegDxLybBxTVqA/exec',
+        'https://script.google.com/macros/s/AKfycbyR09eYgu6ue8cqjPfV0iCwdPZUGzs4K01t9TOgUVtBTFUt4j6biG5hqiLjv4abe22Tzg/exec',
         {
           method: 'POST',
           headers: {
@@ -35,18 +35,15 @@ const Contact = () => {
         }
       );
 
-      const text = await response.text(); // capture actual response from Google Script
-
-      if (response.ok && text === "Success") {
-        alert('✅ Thank you! Your response has been submitted.');
+      if (response.ok) {
+        alert('✅ Thank you! Your message has been sent.');
         setFormData({ name: '', phone: '', email: '', message: '' });
       } else {
-        console.error("❌ Google Script Error:", text);
-        alert('❌ Google Script Error: ' + text);
+        alert('❌ Submission failed. Please try again.');
       }
     } catch (error) {
-      console.error('❌ Network Error:', error);
-      alert('❌ Network Error: ' + error);
+      console.error('Submit error:', error);
+      alert('❌ Network error. Please check your internet or try later.');
     }
   };
 
@@ -119,10 +116,7 @@ const Contact = () => {
                     placeholder="Tell us about your requirements..."
                   ></textarea>
                 </div>
-                <Button
-                  type="submit"
-                  className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3 text-lg"
-                >
+                <Button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3 text-lg">
                   Send Message
                 </Button>
               </form>
