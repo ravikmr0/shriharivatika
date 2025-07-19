@@ -13,14 +13,7 @@ const Contact = () => {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-    alert('Thank you for your inquiry! We will contact you soon.');
-    setFormData({ name: '', phone: '', email: '', message: '' });
-  };
-
+  // ✅ Fix: Add handleChange back
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
@@ -28,10 +21,37 @@ const Contact = () => {
     });
   };
 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch(
+        'https://script.google.com/macros/s/AKfycbwbAkFAC16Gtl-OtIkpdNy7PegxRItjQT0YmA7y8O7VJfkrU6Sw9n8D6c-y0y3L2OLcow/exec',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (response.ok) {
+        alert('Thank you! Your response has been submitted.');
+        setFormData({ name: '', phone: '', email: '', message: '' });
+      } else {
+        alert('Something went wrong. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('Error submitting form');
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-emerald-900 to-emerald-700">
         <div className="container mx-auto px-4 lg:px-8">
