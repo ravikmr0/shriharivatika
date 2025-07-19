@@ -13,7 +13,6 @@ const Contact = () => {
     message: ''
   });
 
-  // ✅ Fix: Add handleChange back
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
@@ -26,7 +25,7 @@ const Contact = () => {
 
     try {
       const response = await fetch(
-        'https://script.google.com/macros/s/AKfycbwbAkFAC16Gtl-OtIkpdNy7PegxRItjQT0YmA7y8O7VJfkrU6Sw9n8D6c-y0y3L2OLcow/exec',
+        'https://script.google.com/macros/s/AKfycbyVN9KvZyZqSWMJ9gvFCbFum4cYAbRgWwNmQ3FeJKeB4Wbz1VobJ4NEXegDxLybBxTVqA/exec',
         {
           method: 'POST',
           headers: {
@@ -36,15 +35,18 @@ const Contact = () => {
         }
       );
 
-      if (response.ok) {
-        alert('Thank you! Your response has been submitted.');
+      const text = await response.text(); // capture actual response from Google Script
+
+      if (response.ok && text === "Success") {
+        alert('✅ Thank you! Your response has been submitted.');
         setFormData({ name: '', phone: '', email: '', message: '' });
       } else {
-        alert('Something went wrong. Please try again.');
+        console.error("❌ Google Script Error:", text);
+        alert('❌ Google Script Error: ' + text);
       }
     } catch (error) {
-      console.error('Error submitting form:', error);
-      alert('Error submitting form');
+      console.error('❌ Network Error:', error);
+      alert('❌ Network Error: ' + error);
     }
   };
 
@@ -117,7 +119,10 @@ const Contact = () => {
                     placeholder="Tell us about your requirements..."
                   ></textarea>
                 </div>
-                <Button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3 text-lg">
+                <Button
+                  type="submit"
+                  className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3 text-lg"
+                >
                   Send Message
                 </Button>
               </form>
@@ -152,7 +157,9 @@ const Contact = () => {
                   <MapPin className="w-6 h-6 text-emerald-600 mr-4" />
                   <div>
                     <div className="font-semibold text-gray-900">Office Address</div>
-                    <div className="text-gray-600">Office No:410, Bhutani Alphathum, Sector 90, Noida, Uttar Pradesh 201305</div>
+                    <div className="text-gray-600">
+                      Office No:410, Bhutani Alphathum, Sector 90, Noida, Uttar Pradesh 201305
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -164,7 +171,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Interactive Google Map */}
+              {/* Google Map */}
               <div className="mt-8">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Our Location</h3>
                 <div className="rounded-lg overflow-hidden shadow-lg border border-gray-200">
