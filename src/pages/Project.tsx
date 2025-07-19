@@ -31,7 +31,7 @@ const Project = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src="/images/plots/vatika.jpg"
+                src="/images/plots/commercial_plot.png"
                 alt="Shri Hari Vatika Development"
                 className="rounded-2xl shadow-2xl"
               />
