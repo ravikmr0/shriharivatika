@@ -26,7 +26,7 @@ const Contact = () => {
 
     try {
       const response = await fetch(
-        'https://script.google.com/macros/s/AKfycbzQSP1W3MVpwmiM1MgHLjmopO-93usG6kq4o1A5JCpYikBVBUxVARFwJa_PZCY2vaFB/exec',
+        'https://script.google.com/macros/s/AKfycbzAhBjFS0U-dzfwjE-V0ksK1evMInJtx6KrtiR4Ab--RC-UUEuqTtadkTpl-Ce8W8hi/exec',
         {
           method: 'POST',
           mode: 'no-cors', // Important for Google Apps Script
