@@ -25,19 +25,21 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(
+      const formBody = new URLSearchParams();
+      formBody.append("name", formData.name);
+      formBody.append("phone", formData.phone);
+      formBody.append("email", formData.email);
+      formBody.append("message", formData.message);
+
+      await fetch(
         'https://script.google.com/macros/s/AKfycbzAhBjFS0U-dzfwjE-V0ksK1evMInJtx6KrtiR4Ab--RC-UUEuqTtadkTpl-Ce8W8hi/exec',
         {
           method: 'POST',
-          mode: 'no-cors', // Important for Google Apps Script
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formData),
+          mode: 'no-cors',
+          body: formBody,
         }
       );
 
-      // Since "no-cors" mode doesn’t return a response, assume success
       alert('✅ Thank you! Your message has been sent.');
       setFormData({ name: '', phone: '', email: '', message: '' });
     } catch (error) {
@@ -46,6 +48,7 @@ const Contact = () => {
     }
   };
 
+    
   return (
     <div className="min-h-screen bg-white">
       <Header />
