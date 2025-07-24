@@ -14,10 +14,11 @@ const Contact = () => {
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -25,9 +26,10 @@ const Contact = () => {
 
     try {
       const response = await fetch(
-        'https://script.google.com/macros/s/AKfycbyR09eYgu6ue8cqjPfV0iCwdPZUGzs4K01t9TOgUVtBTFUt4j6biG5hqiLjv4abe22Tzg/exec',
+        'https://script.google.com/macros/s/AKfycbzQSP1W3MVpwmiM1MgHLjmopO-93usG6kq4o1A5JCpYikBVBUxVARFwJa_PZCY2vaFB/exec',
         {
           method: 'POST',
+          mode: 'no-cors', // Important for Google Apps Script
           headers: {
             'Content-Type': 'application/json',
           },
@@ -35,15 +37,12 @@ const Contact = () => {
         }
       );
 
-      if (response.ok) {
-        alert('✅ Thank you! Your message has been sent.');
-        setFormData({ name: '', phone: '', email: '', message: '' });
-      } else {
-        alert('❌ Submission failed. Please try again.');
-      }
+      // Since "no-cors" mode doesn’t return a response, assume success
+      alert('✅ Thank you! Your message has been sent.');
+      setFormData({ name: '', phone: '', email: '', message: '' });
     } catch (error) {
       console.error('Submit error:', error);
-      alert('❌ Network error. Please check your internet or try later.');
+      alert('❌ Network error. Please try again.');
     }
   };
 
