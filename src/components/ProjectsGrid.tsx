@@ -28,7 +28,7 @@ const ProjectsGrid = () => {
       price: "17 Lac",
       area: "on Request",
       size: "on Request",
-      type: "Authority Plots",
+      type: "Society Plots",
       status: "Available",
       featured: true,
       highlights: ["Government Approved", "Prime Location", "High ROI"]
