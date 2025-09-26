@@ -156,11 +156,16 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-             <a href="www.techvexor.com" className="hover:text-white target="_blank" transition-colors">
-               <div className="text-gray-400 text-sm mb-4 md:mb-0">
-                  © 2025 developed by (www.techvexor.com) All rights reserved.
-               </div>
-            </a>
+             <a 
+                href="https://www.techvexor.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-white transition-colors"
+                >
+                <div className="text-gray-400 text-sm mb-4 md:mb-0">
+                 © 2025 developed by Tech Vexor Pvt. Ltd. 
+                </div>
+                </a>
             <div className="flex space-x-6 text-sm text-gray-400">
               <a href="#" className="hover:text-white transition-colors">
                 Privacy Policy
