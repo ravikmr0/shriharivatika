@@ -110,7 +110,7 @@ const About = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Abhishek Rajput</h3>
                 <p className="text-emerald-600 font-medium mb-3">Founder & CEO</p>
                 <p className="text-gray-600 text-sm">
-                  Abhishek oversees Managing Director and ensures quality construction standards.
+                  Abhishek oversees Founder & CEO and ensures quality construction standards.
                 </p>
               </div>
             </div>
