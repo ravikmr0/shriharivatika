@@ -1,14 +1,16 @@
 import React from "react";
-import { MapPin, Phone, Mail, Instagram, Facebook, Linkedin, Youtube } from "lucide-react";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Instagram,
+  Facebook,
+  Linkedin,
+  Youtube,
+} from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 lg:px-8 py-12">
@@ -43,36 +45,36 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <button
-                  onClick={() => scrollToSection("home")}
-                  className="text-gray-300 hover:text-white transition-colors"
+                <Link
+                  to="/"
+                  className="text-gray-300 hover:text-white transition-colors block"
                 >
                   Home
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("about")}
-                  className="text-gray-300 hover:text-white transition-colors"
+                <Link
+                  to="/about"
+                  className="text-gray-300 hover:text-white transition-colors block"
                 >
                   About Us
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("project")}
-                  className="text-gray-300 hover:text-white transition-colors"
+                <Link
+                  to="/all-projects"
+                  className="text-gray-300 hover:text-white transition-colors block"
                 >
                   Our Project
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("contact")}
-                  className="text-gray-300 hover:text-white transition-colors"
+                <Link
+                  to="/contact"
+                  className="text-gray-300 hover:text-white transition-colors block"
                 >
                   Contact Us
-                </button>
+                </Link>
               </li>
             </ul>
           </div>
@@ -80,12 +82,47 @@ const Footer = () => {
           {/* Our Project */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Shri Hari Vatika</h3>
-            <ul className="space-y-2 text-gray-300">
-              <li>Premium Plots</li>
-              <li>Near Jewar Airport</li>
-              <li>Government Approved</li>
-              <li>Easy EMI Options</li>
-              <li>Gated Community</li>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  to="/premium-plots"
+                  className="text-gray-300 hover:text-white transition-colors block"
+                >
+                  Premium Plots
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/jewar-airport"
+                  className="text-gray-300 hover:text-white transition-colors block"
+                >
+                  Near Jewar Airport
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/government-approved"
+                  className="text-gray-300 hover:text-white transition-colors block"
+                >
+                  Government Approved
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/emi-options"
+                  className="text-gray-300 hover:text-white transition-colors block"
+                >
+                  Easy EMI Options
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/gated-community"
+                  className="text-gray-300 hover:text-white transition-colors block"
+                >
+                  Gated Community
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -152,7 +189,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-             {/* <a 
+            {/* <a 
                 href="https://www.techvexor.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
