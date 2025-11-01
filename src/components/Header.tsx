@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu, X, Phone, ChevronDown } from "lucide-react";
+import { Menu, X, Phone, ChevronDown, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -7,7 +7,14 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const location = useLocation();
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Handle search functionality here
+    console.log("Searching for:", searchQuery);
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b z-50">
@@ -20,6 +27,10 @@ const Header = () => {
               alt="Harishyam Infra"
               className="h-12 w-auto object-contain rounded-xl border-2 border-gray-200 shadow-md"
             />
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-emerald-700">Shri Hari Vatika</span>
+              <span className="text-xs text-gray-600">Premium Plots & Properties</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -96,6 +107,20 @@ const Header = () => {
               Contact Us
             </Link>
           </nav>
+
+          {/* Search Box */}
+          <div className="hidden lg:flex items-center">
+            <form onSubmit={handleSearch} className="relative">
+              <Input
+                type="text"
+                placeholder="Search properties..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-64 pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 transition-all"
+              />
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+            </form>
+          </div>
 
           {/* CTA Button */}
           <div className="hidden md:flex">

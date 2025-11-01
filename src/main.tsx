@@ -1,9 +1,9 @@
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
-import { TempoDevtools } from "tempo-devtools";
+/* import { TempoDevtools } from 'tempo-devtools'; [deprecated] */
 
 // Initialize Tempo Devtools
-TempoDevtools.init();
+/* TempoDevtools.init() [deprecated] */;
 
 createRoot(document.getElementById("root")!).render(<App />);
