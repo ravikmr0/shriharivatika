@@ -85,7 +85,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+            {/* <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <img 
                 src="/images/about_img/sudheer.jpg"
                 alt="CO-Founder"
@@ -98,7 +98,7 @@ const About = () => {
                   Shudheer ensures operational excellence and customer satisfaction across all projects.
                 </p>
               </div>
-            </div>
+            </div> */}
 
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <img 
@@ -108,7 +108,7 @@ const About = () => {
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Abhishek Rajput</h3>
-                <p className="text-emerald-600 font-medium mb-3">Managing Director</p>
+                <p className="text-emerald-600 font-medium mb-3">Founder & CEO</p>
                 <p className="text-gray-600 text-sm">
                   Abhishek oversees Managing Director and ensures quality construction standards.
                 </p>

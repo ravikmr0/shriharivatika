@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white px-3 py-2 rounded-lg font-bold text-lg mb-4 inline-block">
-              Harishyam Infra
+              Shri Hari Vatika
             </div>
             <p className="text-gray-300 mb-4 leading-relaxed">
               Building dreams and creating futures with premium real estate
@@ -32,12 +32,8 @@ const Footer = () => {
                 <span>+91 7678538328</span>
               </div>
               <div className="flex items-center">
-                <Phone className="w-4 h-4 mr-2" />
-                <span>+91 7042077126</span>
-              </div>
-              <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
-                <span>info@harishyaminfra.com</span>
+                <span>info@shriharivatika.org</span>
               </div>
             </div>
           </div>
@@ -156,7 +152,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-             <a 
+             {/* <a 
                 href="https://www.techvexor.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
@@ -165,7 +161,7 @@ const Footer = () => {
                 <div className="text-gray-400 text-sm mb-4 md:mb-0">
                  © 2025 developed by Tech Vexor Pvt. Ltd. 
                 </div>
-                </a>
+                </a> */}
             <div className="flex space-x-6 text-sm text-gray-400">
               <a href="#" className="hover:text-white transition-colors">
                 Privacy Policy
