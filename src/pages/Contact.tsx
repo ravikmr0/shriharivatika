@@ -136,13 +136,6 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <Phone className="w-6 h-6 text-emerald-600 mr-4" />
-                  <div>
-                    <div className="font-semibold text-gray-900">Phone</div>
-                    <div className="text-gray-600">+91 7042077126</div>
-                  </div>
-                </div>
-                <div className="flex items-center">
                   <Mail className="w-6 h-6 text-emerald-600 mr-4" />
                   <div>
                     <div className="font-semibold text-gray-900">Email</div>
@@ -154,7 +147,7 @@ const Contact = () => {
                   <div>
                     <div className="font-semibold text-gray-900">Office Address</div>
                     <div className="text-gray-600">
-                      Office No:410, Bhutani Alphathum, Sector 90, Noida, Uttar Pradesh 201305
+                      A Block A-150 First floor Nearest by Noida sector 62 metro  Sector -63 Noida, Uttar Pradesh, India
                     </div>
                   </div>
                 </div>
